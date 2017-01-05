@@ -1,1 +1,2 @@
-apt-get update
+#!/usr/bin/env bash
+
