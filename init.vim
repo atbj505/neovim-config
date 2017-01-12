@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 " 功能相关
 Plug 'Raimondi/delimitMate'                                     " 自动加括号，换行等
 Plug 'Yggdroot/indentLine'                                      " 缩进线
+Plug 'scrooloose/nerdcommenter'                                 " 注释插件
 Plug 'mattn/emmet-vim'                                          " Emmet神器
 Plug 'ap/vim-css-color'                                         " CSS颜色显示
 Plug 'vim-airline/vim-airline'                                  " 状态栏
@@ -18,6 +19,7 @@ Plug 'honza/vim-snippets'                                       " 常用代码�
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
 Plug 'leshill/vim-json'                                         " JSON
+
 " Plug 'digitaltoad/vim-jade'
 " Plug 'posva/vim-vue'
 " Plug 'cakebaker/scss-syntax.vim'
@@ -49,12 +51,18 @@ vmap j gj
 vmap k gk
 nmap j gj
 nmap k gk
-
+" 快捷键leader
+let mapleader=","
+set timeout timeoutlen=1500
+" 快速注释
+nmap <C-m> ,c<space>
+vmap <C-m> ,c<space>
+imap <C-m> <Esc>,c<space>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
 nmap d<Space> zd
-vmap d<space> zd
+vmap d<Space> zd
 
 " 内置Terminal快捷键
 autocmd BufWinEnter,WinEnter term://* startinsert
@@ -91,7 +99,7 @@ set cursorline                                          " 显示横线
 set so=10                                               " 光标移动到倒数第10行开始滚屏
 set number                                              " 显示行号
 set showmatch                                           " 高亮括号配对
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1                    " 插入模式下光标变为竖线
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1                     " 插入模式下光标变为竖线
 
 
 " 文件类型配置
@@ -123,6 +131,7 @@ set expandtab                                           " 缩进设置，2个空
 set shiftwidth=2
 set softtabstop=2
 set smarttab
+set clipboard=unnamed,unnamedplus                       " 解决系统粘贴板问题
 
 
 " 插件设置
