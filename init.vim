@@ -55,8 +55,9 @@ nmap k gk
 let mapleader=","
 set timeout timeoutlen=1500
 " 快速注释
-nmap <C-m> ,c<space>
-vmap <C-m> ,c<space>
+nmap <F5> ,c<space>
+vmap <F5> ,c<space>
+imap <F5> <Esc>,c<space>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
