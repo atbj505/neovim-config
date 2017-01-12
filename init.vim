@@ -57,7 +57,6 @@ set timeout timeoutlen=1500
 " 快速注释
 nmap <C-m> ,c<space>
 vmap <C-m> ,c<space>
-imap <C-m> <Esc>,c<space>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
