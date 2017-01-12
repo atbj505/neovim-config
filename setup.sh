@@ -20,3 +20,4 @@ sudo pip3 install neovim
 git clone https://github.com/halsn/neovim-config && cd neovim-config
 cp -a ./lintrc/. ~
 cp -r . ~/.config/nvim
+nvim +PlugInstall +qa
