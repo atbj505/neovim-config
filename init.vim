@@ -26,7 +26,6 @@ Plug 'leshill/vim-json'                                         " JSON
 " Plug 'tpope/vim-haml'
 " Plug 'mxw/vim-jsx'
 
-
 call plug#end()
 
 " 快捷键设置

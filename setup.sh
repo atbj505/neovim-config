@@ -12,7 +12,7 @@ source $HOME/.nvm/nvm.sh
 source $HOME/.profile
 source $HOME/.bashrc
 nvm install stable
-npm install js-beautify eslint_d htmlhint jsonlint csslint -g
+npm install js-beautify eslint_d eslint-plugin-react htmlhint jsonlint csslint -g
 
 sudo pip3 install --upgrade pip
 sudo pip3 install neovim
