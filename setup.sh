@@ -19,3 +19,5 @@ sudo pip3 install neovim
 git clone https://github.com/halsn/neovim-config && cd neovim-config
 cp -a ./lintrc/. $HOME
 cp -r . $HOME/.config/nvim
+cp -r ./fonts/. $HOME/.fonts
+fc-cache -fv
