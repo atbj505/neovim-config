@@ -15,7 +15,6 @@
       "react"
     ],
     "rules": {
-      "camelcase": 2,
       "comma-dangle": [2, "never"],
       "no-extra-semi": 2,
       "no-negated-in-lhs": 2,
