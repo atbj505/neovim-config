@@ -32,8 +32,8 @@ call plug#end()
 imap ii <Esc>
 imap <C-j> <C-n>
 imap <C-k> <C-p>
-nmap <F2> <Esc>:Autoformat<CR><Esc>:update<CR>
-imap <F2> <Esc>:Autoformat<CR><Esc>:update<CR>
+nmap <F2> <Esc>:update<CR>
+imap <F2> <Esc>:update<CR>
 " neomake查找错误
 nmap <F3> <Esc>:ll<CR>
 imap <F3> <Esc>:ll<CR>
@@ -69,6 +69,7 @@ autocmd BufLeave term://* stopinsert
 tnoremap <Esc> <C-\><C-n>
 nmap <F8> <Esc>:tabedit term://$SHELL<CR>
 imap <F8> <Esc>:tabedit term://$SHELL<CR>
+
 tnoremap <F4> <C-\><C-n><C-w>
 tnoremap <F9> <C-\><C-n>:tabnext<CR>
 tnoremap <F10> <C-\><C-n>:tabprevious<CR>
@@ -76,6 +77,7 @@ tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
 tnoremap <A-k> <C-\><C-n><C-w>k
 tnoremap <A-l> <C-\><C-n><C-w>l
+
 nnoremap <F9> :tabnext<CR>
 nnoremap <F10> :tabprevious<CR>
 nnoremap <A-h> <C-w>h
