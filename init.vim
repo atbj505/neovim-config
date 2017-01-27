@@ -41,10 +41,10 @@ imap <F3> <Esc>:ll<CR>
 nmap <F4> <Esc><C-w>
 imap <F4> <Esc><C-w>
 " 切换buffer
-nmap <F9> <Esc>:tabnext<CR>
-imap <F9> <Esc>:tabnext<CR>
-nmap <F10> <Esc>:tabprevious<CR>
-imap <F10> <Esc>:tabprevious<CR>
+nmap <F10> <Esc>:tabnext<CR>
+imap <F10> <Esc>:tabnext<CR>
+nmap <F9> <Esc>:tabprevious<CR>
+imap <F9> <Esc>:tabprevious<CR>
 " 让 j, k 可以在 自动wrap的行中上下移动
 vmap j gj
 vmap k gk
@@ -69,17 +69,15 @@ autocmd BufLeave term://* stopinsert
 tnoremap <Esc> <C-\><C-n>
 nmap <F8> <Esc>:tabedit term://$SHELL<CR>
 imap <F8> <Esc>:tabedit term://$SHELL<CR>
-
 tnoremap <F4> <C-\><C-n><C-w>
-tnoremap <F9> <C-\><C-n>:tabnext<CR>
-tnoremap <F10> <C-\><C-n>:tabprevious<CR>
+tnoremap <F10> <C-\><C-n>:tabnext<CR>
+tnoremap <F9> <C-\><C-n>:tabprevious<CR>
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
 tnoremap <A-k> <C-\><C-n><C-w>k
 tnoremap <A-l> <C-\><C-n><C-w>l
-
-nnoremap <F9> :tabnext<CR>
-nnoremap <F10> :tabprevious<CR>
+nnoremap <F10> :tabnext<CR>
+nnoremap <F9> :tabprevious<CR>
 nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k

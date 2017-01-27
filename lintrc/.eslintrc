@@ -23,7 +23,9 @@
     "no-cond-assign": [0],
     "import/no-unresolved": [0],
     "require-yield": [1],
-    "comma-dangle": [2, "never"]
+    "comma-dangle": [2, "never"],
+    "spaced-comment": [0],
+    "arrow-parens": [0]
   },
   "parserOptions": {
     "ecmaFeatures": {
