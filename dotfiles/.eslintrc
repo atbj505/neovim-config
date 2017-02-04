@@ -25,7 +25,11 @@
     "require-yield": [1],
     "comma-dangle": [2, "never"],
     "spaced-comment": [0],
-    "arrow-parens": [0]
+    "arrow-parens": [0],
+    "camelcase": [0],
+    "no-var": [0],
+    "no-console": [0],
+    "no-param-reassign": [0]
   },
   "parserOptions": {
     "ecmaFeatures": {
