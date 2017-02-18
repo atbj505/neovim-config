@@ -85,7 +85,7 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
 " UI设置
-syntax off                                              " 打开语法高亮
+syntax on                                               " 打开语法高亮
 colorscheme monokai                                     " 设置主题monokai
 let g:monokai_thick_border = 1
 hi Normal ctermbg=none                                  " 设置主题時不显示背景
