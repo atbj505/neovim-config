@@ -5,7 +5,7 @@
 * **delimitMate**(自动加括号，换行等)
 * **indentLine**(缩进线)
 * **nerdcommenter**(注释插件)
-* **emmet-vimEmmet**(神器)
+* **emmet-vimEmmet**(前端开发神器)
 * **vim-css-color**(CSS颜色显示)
 * **vim-airline**(状态栏)
 * **vim-airline-themes**(状态栏主题)
