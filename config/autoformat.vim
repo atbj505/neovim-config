@@ -1,5 +1,5 @@
 " JavaScript
-let g:formatdef_javascript = '"js-beautify -s 2 -j -a -k"'
+let g:formatdef_javascript = '"js-beautify -s 2 -j -a -k -X"'
 let g:formatters_javascript = ['javascript']
 
 " Html

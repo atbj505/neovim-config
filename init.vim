@@ -19,12 +19,13 @@ Plug 'honza/vim-snippets'                                       " 常用代码�
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
 Plug 'leshill/vim-json'                                         " JSON
+Plug 'digitaltoad/vim-pug'                                      " Pug
 
+" Plug 'mxw/vim-jsx'
 " Plug 'digitaltoad/vim-jade'
 " Plug 'posva/vim-vue'
 " Plug 'cakebaker/scss-syntax.vim'
 " Plug 'tpope/vim-haml'
-" Plug 'mxw/vim-jsx'
 
 call plug#end()
 
@@ -32,8 +33,8 @@ call plug#end()
 imap ii <Esc>
 imap <C-j> <C-n>
 imap <C-k> <C-p>
-nmap <F2> <Esc>:Autoformat<CR><Esc>:update<CR>
-imap <F2> <Esc>:Autoformat<CR><Esc>:update<CR>
+nmap <F2> <Esc>:update<CR>
+imap <F2> <Esc>:update<CR>
 " neomake查找错误
 nmap <F3> <Esc>:ll<CR>
 imap <F3> <Esc>:ll<CR>
@@ -41,10 +42,10 @@ imap <F3> <Esc>:ll<CR>
 nmap <F4> <Esc><C-w>
 imap <F4> <Esc><C-w>
 " 切换buffer
-nmap <F9> <Esc>:bnext!<CR>
-imap <F9> <Esc>:bnext!<CR>
-nmap <F10> <Esc>:bprevious!<CR>
-imap <F10> <Esc>:bprevious!<CR>
+nmap <F10> <Esc>:tabnext<CR>
+imap <F10> <Esc>:tabnext<CR>
+nmap <F9> <Esc>:tabprevious<CR>
+imap <F9> <Esc>:tabprevious<CR>
 " 让 j, k 可以在 自动wrap的行中上下移动
 vmap j gj
 vmap k gk
@@ -67,17 +68,17 @@ vmap d<Space> zd
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
 tnoremap <Esc> <C-\><C-n>
-nmap <F7> <Esc>:vsp term://bash<CR>
-imap <F7> <Esc>:vsp term://bash<CR>
-nmap <F8> <Esc>:sp term://bash<CR>
-imap <F8> <Esc>:sp term://bash<CR>
+nmap <F8> <Esc>:tabedit term://$SHELL<CR>
+imap <F8> <Esc>:tabedit term://$SHELL<CR>
 tnoremap <F4> <C-\><C-n><C-w>
-tnoremap <F9> <C-\><C-n>:bnext!<CR>
-tnoremap <F10> <C-\><C-n>:bprevious!<CR>
+tnoremap <F10> <C-\><C-n>:tabnext<CR>
+tnoremap <F9> <C-\><C-n>:tabprevious<CR>
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
 tnoremap <A-k> <C-\><C-n><C-w>k
 tnoremap <A-l> <C-\><C-n><C-w>l
+nnoremap <F10> :tabnext<CR>
+nnoremap <F9> :tabprevious<CR>
 nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
