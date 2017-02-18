@@ -84,6 +84,7 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
+
 " UI设置
 syntax on                                               " 打开语法高亮
 colorscheme monokai                                     " 设置主题monokai
