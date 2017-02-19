@@ -18,3 +18,5 @@
 * **Dockerfile.vim**(Dockerfile语法支持)
 * **vim-json**(JSON语法支持)
 * **vim-pug**(Pug语法支持)
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
