@@ -103,7 +103,7 @@ set so=10                                               " 光标移动到倒数�
 set number                                              " 显示行号
 set showmatch                                           " 高亮括号配对
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1                     " 插入模式下光标变为竖线
-set hidden
+"set hidden
 
 
 " 文件类型配置
