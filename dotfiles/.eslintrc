@@ -35,7 +35,8 @@
     "jsx-quotes": ["error", "prefer-single"],
     "quotes": ["error", "single"],
     "quote-props": [0],
-    "no-shadow": [0]
+    "no-shadow": [0],
+    "strict": [0]
   },
   "parserOptions": {
     "ecmaFeatures": {
