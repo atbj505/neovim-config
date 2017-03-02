@@ -91,7 +91,7 @@ nnoremap <A-l> <C-w>l
 syntax on                                               " 打开语法高亮
 colorscheme monokai                                     " 设置主题monokai
 let g:monokai_thick_border = 1
-hi Normal ctermbg=none                                  " 设置主题時不显示背景
+"hi Normal ctermbg=none                                  " 设置主题時不显示背景
 hi NonText ctermbg=none
 hi MatchParen cterm=none ctermbg=237 ctermfg=red        " 设置匹配颜色
 hi Folded ctermbg=23 ctermfg=255                        " 设置折叠区颜色
