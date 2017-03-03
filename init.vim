@@ -41,8 +41,8 @@ imap <F2> <Esc>:update<CR>
 nmap <F3> <Esc>:ll<CR>
 imap <F3> <Esc>:ll<CR>
 " 变更视窗
-nmap <F4> <Esc><C-w>
-imap <F4> <Esc><C-w>
+nmap <F4> <Esc>:CtrlSpace<CR>
+imap <F4> <Esc>:CtrlSpace<CR>
 " 切换buffer
 nmap <F10> <Esc>:tabnext<CR>
 imap <F10> <Esc>:tabnext<CR>
