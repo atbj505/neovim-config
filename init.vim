@@ -47,10 +47,8 @@ imap <F3> <Esc>:ll<CR>
 nmap <leader><Space> <Esc>:CtrlSpace<CR>
 imap <leader><Space> <Esc>:CtrlSpace<CR>
 " 切换Tab
-nmap <F10> <Esc>:tabnext<CR>
-imap <F10> <Esc>:tabnext<CR>
-nmap <F9> <Esc>:tabprevious<CR>
-imap <F9> <Esc>:tabprevious<CR>
+nmap <leader>n <Esc>:tabnext<CR>
+imap <leader>n <Esc>:tabnext<CR>
 " 让 j, k 可以在 自动wrap的行中上下移动
 vmap j gj
 vmap k gk
