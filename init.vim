@@ -40,10 +40,10 @@ imap <F2> <Esc>:update<CR>
 " neomake查找错误
 nmap <F3> <Esc>:ll<CR>
 imap <F3> <Esc>:ll<CR>
-" 变更视窗
-nmap <F4> <Esc>:CtrlSpace<CR>
-imap <F4> <Esc>:CtrlSpace<CR>
-" 切换buffer
+" buffer list
+nmap ,<space> <Esc>:CtrlSpace<CR>
+imap ,<space> <Esc>:CtrlSpace<CR>
+" 切换Tab
 nmap <F10> <Esc>:tabnext<CR>
 imap <F10> <Esc>:tabnext<CR>
 nmap <F9> <Esc>:tabprevious<CR>
