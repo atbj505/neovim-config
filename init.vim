@@ -59,9 +59,9 @@ set timeout timeoutlen=1500
 " NERDTreeToggle
 nmap <leader>t :NERDTreeToggle<cr>
 " 快速注释
-nmap <F5> ,c<space>
-vmap <F5> ,c<space>
-imap <F5> <Esc>,c<space>
+nmap <F5> <leader>c<space>
+vmap <F5> <leader>c<space>
+imap <F5> <Esc><leader>c<space>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
