@@ -8,4 +8,4 @@ hi link CtrlSpaceSelected PMenuSel
 hi link CtrlSpaceSearch   Search
 hi link CtrlSpaceStatus   StatusLine
 hi link CtrlSpaceSearch IncSearch
-"let g:airline_exclude_preview = 1
+let g:airline_exclude_preview = 1
