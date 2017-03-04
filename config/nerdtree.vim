@@ -23,4 +23,3 @@ call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 let NERDTreeMouseMode=2
-nmap nt :NERDTreeToggle<cr>
