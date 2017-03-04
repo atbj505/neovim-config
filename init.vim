@@ -37,12 +37,15 @@ imap <C-j> <C-n>
 imap <C-k> <C-p>
 nmap <F2> <Esc>:update<CR>
 imap <F2> <Esc>:update<CR>
+" 快捷键leader
+let mapleader=","
+set timeout timeoutlen=1500
 " neomake查找错误
 nmap <F3> <Esc>:ll<CR>
 imap <F3> <Esc>:ll<CR>
 " buffer list
-nmap ,<space> <Esc>:CtrlSpace<CR>
-imap ,<space> <Esc>:CtrlSpace<CR>
+nmap <leader><Space> <Esc>:CtrlSpace<CR>
+imap <leader><Space> <Esc>:CtrlSpace<CR>
 " 切换Tab
 nmap <F10> <Esc>:tabnext<CR>
 imap <F10> <Esc>:tabnext<CR>
@@ -53,9 +56,6 @@ vmap j gj
 vmap k gk
 nmap j gj
 nmap k gk
-" 快捷键leader
-let mapleader=","
-set timeout timeoutlen=1500
 " NERDTreeToggle
 nmap <leader>t :NERDTreeToggle<cr>
 " 快速注释
