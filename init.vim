@@ -59,9 +59,9 @@ nmap k gk
 " NERDTreeToggle
 nmap <leader>t :NERDTreeToggle<cr>
 " 快速注释
-nmap <F5> <leader>c<space>
-vmap <F5> <leader>c<space>
-imap <F5> <Esc><leader>c<space>
+nmap <F4> <leader>c<space>
+vmap <F4> <leader>c<space>
+imap <F4> <Esc><leader>c<space>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
@@ -72,8 +72,8 @@ vmap d<Space> zd
 " autocmd BufWinEnter,WinEnter term://* startinsert
 " autocmd BufLeave term://* stopinsert
 tnoremap <Esc> <C-\><C-n>
-nmap <F8> <Esc>:tabedit term://$SHELL<CR>
-imap <F8> <Esc>:tabedit term://$SHELL<CR>
+nmap <leader>m <Esc>:tabedit term://$SHELL<CR>
+imap <leader>m <Esc>:tabedit term://$SHELL<CR>
 " tnoremap <F10> <C-\><C-n>:tabnext<CR>
 " tnoremap <F9> <C-\><C-n>:tabprevious<CR>
 tnoremap <A-h> <C-\><C-n><C-w>h
