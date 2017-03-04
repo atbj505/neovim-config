@@ -49,6 +49,8 @@ imap <leader><Space> <Esc>:CtrlSpace<CR>
 " 切换Tab
 nmap <leader>n <Esc>:tabnext<CR>
 imap <leader>n <Esc>:tabnext<CR>
+nmap <leader>p <Esc>:tabprevious<CR>
+imap <leader>p <Esc>:tabprevious<CR>
 " 让 j, k 可以在 自动wrap的行中上下移动
 vmap j gj
 vmap k gk
@@ -72,16 +74,14 @@ vmap d<Space> zd
 tnoremap <Esc> <C-\><C-n>
 nmap <F8> <Esc>:tabedit term://$SHELL<CR>
 imap <F8> <Esc>:tabedit term://$SHELL<CR>
-tnoremap <F4> <C-\><C-n><C-w>
-tnoremap <F10> <C-\><C-n>:tabnext<CR>
-tnoremap <F9> <C-\><C-n>:tabprevious<CR>
+" tnoremap <F10> <C-\><C-n>:tabnext<CR>
+" tnoremap <F9> <C-\><C-n>:tabprevious<CR>
 tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
 tnoremap <A-k> <C-\><C-n><C-w>k
 tnoremap <A-l> <C-\><C-n><C-w>l
-imap <F8> <Esc>
-nmap <F10> :tabnext<CR>
-nmap <F9> :tabprevious<CR>
+" nmap <F10> :tabnext<CR>
+" nmap <F9> :tabprevious<CR>
 nmap <A-h> <C-w>h
 nmap <A-j> <C-w>j
 nmap <A-k> <C-w>k
