@@ -69,8 +69,8 @@ nmap d<Space> zd
 vmap d<Space> zd
 
 " 内置Terminal快捷键
-autocmd BufWinEnter,WinEnter term://* startinsert
-autocmd BufLeave term://* stopinsert
+" autocmd BufWinEnter,WinEnter term://* startinsert
+" autocmd BufLeave term://* stopinsert
 tnoremap <Esc> <C-\><C-n>
 nmap <F8> <Esc>:tabedit term://$SHELL<CR>
 imap <F8> <Esc>:tabedit term://$SHELL<CR>
