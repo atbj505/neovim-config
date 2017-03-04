@@ -79,7 +79,7 @@ tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
 tnoremap <A-k> <C-\><C-n><C-w>k
 tnoremap <A-l> <C-\><C-n><C-w>l
-tinsertmap <F8> <Esc>
+insertmap <F8> <Esc>
 nmap <F10> :tabnext<CR>
 nmap <F9> :tabprevious<CR>
 nmap <A-h> <C-w>h
