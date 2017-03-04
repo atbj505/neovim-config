@@ -79,12 +79,13 @@ tnoremap <A-h> <C-\><C-n><C-w>h
 tnoremap <A-j> <C-\><C-n><C-w>j
 tnoremap <A-k> <C-\><C-n><C-w>k
 tnoremap <A-l> <C-\><C-n><C-w>l
-nnoremap <F10> :tabnext<CR>
-nnoremap <F9> :tabprevious<CR>
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
+tinsertmap <F8> <Esc>
+nmap <F10> :tabnext<CR>
+nmap <F9> :tabprevious<CR>
+nmap <A-h> <C-w>h
+nmap <A-j> <C-w>j
+nmap <A-k> <C-w>k
+nmap <A-l> <C-w>l
 
 
 " UI设置
