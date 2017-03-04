@@ -138,7 +138,7 @@ set shiftwidth=2
 set softtabstop=2
 set smarttab
 set clipboard=unnamed,unnamedplus                       " 解决系统粘贴板问题
-
+let NERDSpaceDelims=1
 
 " 插件设置
 source ~/.config/nvim/config/saveview.vim               " 保存代码折叠,光标位置等相关信息
