@@ -152,3 +152,4 @@ source ~/.config/nvim/config/deoplete.vim               " deoplete设置
 source ~/.config/nvim/config/neomake.vim                " neomake设置
 source ~/.config/nvim/config/autoformat.vim             " autoformat设置
 source ~/.config/nvim/config/ultisnips.vim              " ultisnips设置
+source ~/.config/nvim/config/ctrlspace.vim              " ctrlspace设置
