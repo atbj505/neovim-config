@@ -57,7 +57,7 @@ nmap k gk
 let mapleader=","
 set timeout timeoutlen=1500
 " NERDTreeToggle
-nmap ,t :NERDTreeToggle<cr>
+nmap <leader>t :NERDTreeToggle<cr>
 " 快速注释
 nmap <F5> ,c<space>
 vmap <F5> ,c<space>
