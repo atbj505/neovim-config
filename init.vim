@@ -18,7 +18,6 @@ Plug 'honza/vim-snippets'                                       " 常用代码�
 Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列表
 Plug 'terryma/vim-multiple-cursors'                             " multiple cursors
 Plug 'jrosiek/vim-mark'                                         " 高亮，看源码神器
-Plug 'majutsushi/tagbar'
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
