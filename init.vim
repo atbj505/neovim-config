@@ -17,6 +17,7 @@ Plug 'SirVer/ultisnips'                                         " 代码块
 Plug 'honza/vim-snippets'                                       " 常用代码块集合
 Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列表
 Plug 'terryma/vim-multiple-cursors'                             " multiple cursors
+Plug 'jrosiek/vim-mark'
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
