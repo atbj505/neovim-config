@@ -70,7 +70,7 @@ vmap d<Space> zd
 " autocmd BufWinEnter,WinEnter term://* startinsert
 " autocmd BufLeave term://* stopinsert
 tnoremap <Esc> <C-\><C-n>
-nmap <leader>m <Esc>:tabedit term://$SHELL<CR>
+nmap <leader>t <Esc>:tabedit term://$SHELL<CR>
 " tnoremap <F10> <C-\><C-n>:tabnext<CR>
 " tnoremap <F9> <C-\><C-n>:tabprevious<CR>
 tnoremap <A-h> <C-\><C-n><C-w>h
