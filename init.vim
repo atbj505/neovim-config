@@ -101,6 +101,7 @@ set t_Co=256                                            " 设置主题时背景�
 " set cursorline                                          " 显示横线
 " set cursorcolumn                                      " 显示列线
 set so=10                                               " 光标移动到倒数第10行开始滚屏
+set sidescroll=1                                        " 横向滚屏时为1字符
 set number                                              " 显示行号
 set showmatch                                           " 高亮括号配对
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1                     " 插入模式下光标变为竖线
