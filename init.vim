@@ -137,6 +137,7 @@ set expandtab                                           " 缩进设置，2个空
 set shiftwidth=2
 set softtabstop=2
 set smarttab
+set noswapfile
 set clipboard=unnamed,unnamedplus                       " 解决系统粘贴板问题
 
 " 插件设置
