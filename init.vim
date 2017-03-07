@@ -17,6 +17,7 @@ Plug 'SirVer/ultisnips'                                         " 代码块
 Plug 'honza/vim-snippets'                                       " 常用代码块集合
 Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列表
 Plug 'jrosiek/vim-mark'                                         " 高亮，看源码神器
+Plug 'myusuf3/numbers.vim'
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
