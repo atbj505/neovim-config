@@ -94,7 +94,7 @@ let g:monokai_thick_border = 1
 hi Normal ctermbg=none                                  " 设置主题時不显示背景
 hi NonText ctermbg=none
 " hi MatchParen cterm=none ctermbg=237 ctermfg=yellow     " 设置匹配颜色
-hi MatchParen cterm=none ctermbg=yellow ctermfg=yellow
+hi MatchParen cterm=none ctermbg=8 ctermfg=9
 hi Folded ctermbg=23 ctermfg=255                        " 设置折叠区颜色
 " set textwidth=80                                      " 设置每行最长宽度
 set t_Co=256                                            " 设置主题时背景是否可变,256色支持
