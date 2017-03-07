@@ -95,7 +95,7 @@ hi Folded ctermbg=23 ctermfg=255                        " 设置折叠区颜色
 " set textwidth=80                                      " 设置每行最长宽度
 set t_Co=256                                            " 设置主题时背景是否可变,256色支持
 set cursorline                                          " 显示横线
-set cursorcolumn                                      " 显示列线
+" set cursorcolumn                                      " 显示列线
 set so=10                                               " 光标移动到倒数第10行开始滚屏
 set number                                              " 显示行号
 set showmatch                                           " 高亮括号配对
