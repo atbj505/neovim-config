@@ -45,9 +45,12 @@ nmap <F3> <Esc>:ll<CR>
 imap <F3> <Esc>:ll<CR>
 " buffer list
 nmap <leader><Space> <Esc>:CtrlSpace<CR>
+" 切换buffer
+nmap <leader>j <Esc>:bprevious<CR>
+nmap <leader>k <Esc>:bnext<CR>
 " 切换Tab
-nmap <leader>h <Esc>:tabnext<CR>
-nmap <leader>l <Esc>:tabprevious<CR>
+nmap <leader>l <Esc>:tabnext<CR>
+nmap <leader>h <Esc>:tabprevious<CR>
 " 让 j, k 可以在 自动wrap的行中上下移动
 vmap j gj
 vmap k gk
