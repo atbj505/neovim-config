@@ -90,7 +90,7 @@ nmap <A-left> <Esc>:vertical resize -1<CR>
 nmap <A-right> <Esc>:vertical resize +1<CR>
 nmap <A-up> <Esc>:resize +1<CR>
 nmap <A-down> <Esc>:resize -1<CR>
-tnoremap <A-left> <Esc>:vertical resize -1<CR>
+tnoremap <A-left> <C-\><C-n>:vertical resize -1<CR>
 tnoremap <A-right> <Esc>:vertical resize +1<CR>
 tnoremap <A-up> <Esc>:resize +1<CR>
 tnoremap <A-down> <Esc>:resize -1<CR>
