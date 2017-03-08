@@ -90,10 +90,6 @@ nmap <A-left> <Esc>:vertical resize -1<CR>
 nmap <A-right> <Esc>:vertical resize +1<CR>
 nmap <A-up> <Esc>:resize +1<CR>
 nmap <A-down> <Esc>:resize -1<CR>
-" tnoremap <A-left> <C-\><C-n>:vertical resize -1<CR>
-" tnoremap <A-right> <C-><C-n>:vertical resize +1<CR>
-" tnoremap <A-up> <C-><C-n>:resize +1<CR>
-" tnoremap <A-down> <C-><C-n>:resize -1<CR>
 
 " UI设置
 syntax on                                               " 打开语法高亮
