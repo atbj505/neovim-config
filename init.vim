@@ -86,8 +86,10 @@ nmap <A-h> <C-w>h
 nmap <A-j> <C-w>j
 nmap <A-k> <C-w>k
 nmap <A-l> <C-w>l
-nmap <A-left> <Esc>:res -1<CR>
-
+nmap <A-left> <Esc>:vertical resize -1<CR>
+nmap <A-right> <Esc>:vertical resize -1<CR>
+nmap <A-up> <Esc>:vertical resize -1<CR>
+nmap <A-down> <Esc>:vertical resize -1<CR>
 
 " UI设置
 syntax on                                               " 打开语法高亮
