@@ -86,6 +86,7 @@ nmap <A-h> <C-w>h
 nmap <A-j> <C-w>j
 nmap <A-k> <C-w>k
 nmap <A-l> <C-w>l
+nmap <A-left> <Esc>:res -1<CR>
 
 
 " UI设置
