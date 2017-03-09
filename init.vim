@@ -60,8 +60,7 @@ nmap k gk
 nmap <leader>t :NERDTreeToggle<cr>
 " 快速注释
 nmap <leader>v <leader>c<space>
-" vmap <F4> <leader>c<space>
-" imap <F4> <Esc><leader>c<space>
+vmap <leader>v <leader>c<space>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
