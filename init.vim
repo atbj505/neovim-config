@@ -40,8 +40,7 @@ imap <C-k> <C-p>
 let mapleader=","
 set timeout timeoutlen=1500
 " neomake查找错误
-nmap <F3> <Esc>:ll<CR>
-imap <F3> <Esc>:ll<CR>
+nmap <leader>e <Esc>:ll<CR>
 " buffer list
 nmap <leader><Space> <Esc>:CtrlSpace<CR>
 " 切换buffer
