@@ -59,7 +59,7 @@ nmap k gk
 " NERDTreeToggle
 nmap <leader>t :NERDTreeToggle<cr>
 " 快速注释
-nmap <F4> <leader>c<space>
+nmap <leader>c <leader>c<space>
 vmap <F4> <leader>c<space>
 imap <F4> <Esc><leader>c<space>
 " 用空格键来开关折叠
