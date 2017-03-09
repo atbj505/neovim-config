@@ -7,7 +7,8 @@ Plug 'Yggdroot/indentLine'                                      " 缩进线
 Plug 'scrooloose/nerdcommenter'                                 " 注释插件
 Plug 'mattn/emmet-vim'                                          " Emmet神器
 Plug 'ap/vim-css-color'                                         " CSS颜色显示
-Plug 'vim-airline/vim-airline'                                  " 状态栏 Plug 'vim-airline/vim-airline-themes'                           " 状态栏主题
+Plug 'vim-airline/vim-airline'                                  " 状态栏 
+Plug 'vim-airline/vim-airline-themes'                           " 状态栏主题
 Plug 'scrooloose/nerdtree'                                      " 查看项目文件
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'neomake/neomake'                                          " 代码检错
