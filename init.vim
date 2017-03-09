@@ -51,6 +51,7 @@ nmap <leader><Space> <Esc>:CtrlSpace<CR>
 nmap <leader>l <Esc>:tabnext<CR>
 nmap <leader>h <Esc>:tabprevious<CR>
 nmap <leader>s <Esc>:w<CR>
+nmap <leader>q <Esc>:wq<CR>
 " 让 j, k 可以在 自动wrap的行中上下移动
 vmap j gj
 vmap k gk
