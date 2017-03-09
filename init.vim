@@ -16,7 +16,6 @@ Plug 'SirVer/ultisnips'                                         " 代码块
 Plug 'honza/vim-snippets'                                       " 常用代码块集合
 Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列表
 Plug 'jrosiek/vim-mark'                                         " 高亮，看源码神器
-Plug 'myusuf3/numbers.vim'                                      " 显示相对行号
 Plug 'Lokaltog/vim-easymotion'                                  " 快速跳转
 
 " 语法支持
