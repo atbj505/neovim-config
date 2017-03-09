@@ -7,8 +7,7 @@ Plug 'Yggdroot/indentLine'                                      " 缩进线
 Plug 'scrooloose/nerdcommenter'                                 " 注释插件
 Plug 'mattn/emmet-vim'                                          " Emmet神器
 Plug 'ap/vim-css-color'                                         " CSS颜色显示
-Plug 'vim-airline/vim-airline'                                  " 状态栏
-Plug 'vim-airline/vim-airline-themes'                           " 状态栏主题
+Plug 'vim-airline/vim-airline'                                  " 状态栏 Plug 'vim-airline/vim-airline-themes'                           " 状态栏主题
 Plug 'scrooloose/nerdtree'                                      " 查看项目文件
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'neomake/neomake'                                          " 代码检错
@@ -18,6 +17,7 @@ Plug 'honza/vim-snippets'                                       " 常用代码�
 Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列表
 Plug 'jrosiek/vim-mark'                                         " 高亮，看源码神器
 Plug 'myusuf3/numbers.vim'                                      " 显示相对行号
+Plug 'Lokaltog/vim-easymotion'
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
