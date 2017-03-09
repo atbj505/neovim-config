@@ -47,8 +47,8 @@ imap <F3> <Esc>:ll<CR>
 " buffer list
 nmap <leader><Space> <Esc>:CtrlSpace<CR>
 " 切换buffer
-nmap <leader>j <Esc>:bpre<CR>
-nmap <leader>k <Esc>:bnext<CR>
+" nmap <leader>j <Esc>:bpre<CR>
+" nmap <leader>k <Esc>:bnext<CR>
 " 切换Tab
 nmap <leader>l <Esc>:tabnext<CR>
 nmap <leader>h <Esc>:tabprevious<CR>
