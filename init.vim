@@ -36,8 +36,6 @@ call plug#end()
 imap ii <Esc>
 imap <C-j> <C-n>
 imap <C-k> <C-p>
-nmap <F2> <Esc>:update<CR>
-imap <F2> <Esc>:update<CR>
 " 快捷键leader
 let mapleader=","
 set timeout timeoutlen=1500
@@ -61,9 +59,9 @@ nmap k gk
 " NERDTreeToggle
 nmap <leader>t :NERDTreeToggle<cr>
 " 快速注释
-nmap <F4> <leader>c<space>
-vmap <F4> <leader>c<space>
-imap <F4> <Esc><leader>c<space>
+" nmap <F4> <leader>c<space>
+" vmap <F4> <leader>c<space>
+" imap <F4> <Esc><leader>c<space>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
