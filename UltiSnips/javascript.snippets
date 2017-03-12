@@ -67,3 +67,14 @@ function range(m, n) {
 }
 $0
 endsnippet
+
+snippet retj
+return reject({ $0 });
+endsnippet
+
+snippet retv "description"
+return resolve({ $0 });
+endsnippet
+
+snippet retres "description"
+return res.status($0).json({ $1 });
