@@ -68,26 +68,26 @@ function range(m, n) {
 $0
 endsnippet
 
-snippet retj
+snippet retj "return reject"
 return reject({ $0 });
 endsnippet
 
-snippet retv "description"
+snippet retv "return resolve"
 return resolve({ $0 });
 endsnippet
 
-snippet retres "description"
+snippet retres "return res.status.json"
 return res.status($1).json({ $0 });
 endsnippet
 
-snippet logi "description"
+snippet logi "logger.info"
 logger.info($0);
 endsnippet
 
-snippet loge "description"
+snippet loge "logger.error"
 logger.error($0);
 endsnippet
 
-snippet logd "description"
+snippet logd "logger.debug"
 logger.debug($0);
 endsnippet
