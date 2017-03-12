@@ -59,3 +59,10 @@ return new Promise((resolve, reject) => {
   $0
 });
 endsnippet
+
+# range函数
+snippet	range
+function range(m, n) {
+  return Array(n - m + 1).fill().map((x, i) => m + i);
+}
+endsnippet
