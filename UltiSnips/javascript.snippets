@@ -54,14 +54,14 @@ for (let ${2:i} = 0; $2 < ${1:arr.length}; $2 += 1) {
 endsnippet
 
 # promise
-snippet	retpro
+snippet	retpro "return new Promse"
 return new Promise((resolve, reject) => {
   $0
 });
 endsnippet
 
 # range函数
-snippet	range
+snippet	range "range(m, n)"
 function range(m, n) {
   return Array(n - m + 1).fill().map((x, i) => m + i);
 }
