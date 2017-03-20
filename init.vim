@@ -73,6 +73,7 @@ vmap d<Space> zd
 " autocmd BufLeave term://* stopinsert
 tnoremap <Esc> <C-\><C-n>
 nmap <leader>g <Esc>:tabedit term://$SHELL<CR>
+nmap <leader>f <Esc>:sp term://$SHELL<CR>
 " tnoremap <F10> <C-\><C-n>:tabnext<CR>
 " tnoremap <F9> <C-\><C-n>:tabprevious<CR>
 tnoremap <A-h> <C-\><C-n><C-w>h
