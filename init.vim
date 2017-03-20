@@ -156,4 +156,3 @@ source ~/.config/nvim/config/autoformat.vim             " autoformat设置
 source ~/.config/nvim/config/ultisnips.vim              " ultisnips设置
 source ~/.config/nvim/config/ctrlspace.vim              " ctrlspace设置
 source ~/.config/nvim/config/nerdcommenter.vim          " nerdcommenter设置
-
