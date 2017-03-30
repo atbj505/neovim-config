@@ -57,47 +57,47 @@ endsnippet
 snippet	retpro "return new Promse"
 return new Promise((resolve, reject) => {
   $0
-});
+})
 endsnippet
 
 # range函数
 snippet	range "range(m, n)"
 function range(m, n) {
-  return Array(n - m + 1).fill().map((x, i) => m + i);
+  return Array(n - m + 1).fill().map((x, i) => m + i)
 }
 $0
 endsnippet
 
 snippet retj "return reject"
-return reject({ $0 });
+return reject({ $0 })
 endsnippet
 
 snippet retv "return resolve"
-return resolve({ $0 });
+return resolve({ $0 })
 endsnippet
 
 snippet retres "return res.status.json"
-return res.json({ $0 });
+return res.json({ $0 })
 endsnippet
 
 snippet logi "logger.info"
-logger.info($0);
+logger.info($0)
 endsnippet
 
 snippet loge "logger.error"
-logger.error($0);
+logger.error($0)
 endsnippet
 
 snippet logd "logger.debug"
-logger.debug($0);
+logger.debug($0)
 endsnippet
 
 snippet req "require('model')"
 require('$0')
 endsnippet
 
-snippet con "const = ;"
-const ${1} = ${0};
+snippet con "const = "
+const ${1} = ${0}
 endsnippet
 
 snippet jsons "JSON.stringify"
@@ -109,19 +109,23 @@ JSON.parse(${1})${0}
 endsnippet
 
 snippet each "[].forEach"
-${1:array}.forEach((${2:el}, ${3:idx}) => {
+${1:array}.forEach((${2:el}) => {
   ${0}
-});
+})
 endsnippet
 
 snippet map "[].map"
-${1:array}.map((${2:el}, ${3:idx}) => ${0});
+${1:array}.map((${2:el}) => ${0})
 endsnippet
 
 snippet filter "[].filter"
-${1:array}.filter(${2:el} => ${0});
+${1:array}.filter(${2:el} => ${0})
 endsnippet
 
 snippet reduce "[].reduce"
-${1:array}.reduce((${2:pre}, ${3:cur}) => ${0});
+${1:array}.reduce((${2:pre}, ${3:cur}) => ${0})
+endsnippet
+
+snippet cl "console.log"
+console.log(${0})
 endsnippet
