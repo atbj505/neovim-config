@@ -93,7 +93,11 @@ logger.debug($0)
 endsnippet
 
 snippet req "require('model')"
-require($0)
+require('$0')
+endsnippet
+
+snippet reqpr "require(path.resolve(''))"
+require(path.resolve(''))
 endsnippet
 
 snippet con "const = "
@@ -132,8 +136,4 @@ endsnippet
 
 snippet ex "module.export"
 module.exports${1} = ${0}
-endsnippet
-
-snippet pr "path.resolve"
-path.resolve('${0}')
 endsnippet
