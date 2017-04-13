@@ -171,5 +171,7 @@ _.assign({${1}}, ${2:obj})
 endsnippet
 
 snippet .catch ".catch(err)"
-.catch(err => Promise.reject({ error: errorHandler.getErrorMessage(err) }))
+.catch(err => {
+  ${0}
+})
 endsnippet
