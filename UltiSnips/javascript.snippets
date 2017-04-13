@@ -172,6 +172,6 @@ endsnippet
 
 snippet .catch ".catch(err)"
 .catch(err => {
-  ${0}
+  retrun Promise.reject({ error: errorHanlder.getErrorMessage(err) })
 })
 endsnippet
