@@ -9,6 +9,7 @@ sudo apt-get -y install xclip xsel git
 
 sudo pip3 install --upgrade pip
 sudo pip3 install neovim
+cd $HOME
 git clone git@github.com:halsn/neovim-config && cd neovim-config
 cp -a ./dotfiles/. $HOME
 cp -r . $HOME/.config/nvim
