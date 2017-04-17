@@ -7,13 +7,6 @@ sudo apt-get -y install neovim
 sudo apt-get -y install python-dev python-pip python3-dev python3-pip
 sudo apt-get -y install xclip xsel git
 
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
-source $HOME/.nvm/nvm.sh
-source $HOME/.profile
-source $HOME/.bashrc
-nvm install stable
-npm install js-beautify eslint_d babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y htmlhint eslint jsonlint csslint -g
-
 sudo pip3 install --upgrade pip
 sudo pip3 install neovim
 git clone git@github.com:halsn/neovim-config && cd neovim-config
