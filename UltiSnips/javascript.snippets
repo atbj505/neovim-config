@@ -185,13 +185,13 @@ let ${1} = ${0}
 endsnippet
 
 snippet reactclass "class component extends React.Component"
-class myCourse extends React.Component {
+class ${1:component} extends React.Component {
   constructor() {
     super()
     didmount(this)
   }
   state = {
-
+    ${2}
   }
   render() {
     const { } = this.props
