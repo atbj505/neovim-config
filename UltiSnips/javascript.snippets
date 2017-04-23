@@ -235,15 +235,15 @@ export default {
   },
   reducers: {
     getSuccess(state, { payload }) {
+      message.success(payload.success, ERROR_MSG_DURATION)
       return {
-	...state,
-	...payload
+	...state
       }
     },
     getFail(state, { payload }) {
+      message.error(payload.error, ERROR_MSG_DURATION)
       return {
-	...state,
-	...payload
+	...state
       }
     }
   }
