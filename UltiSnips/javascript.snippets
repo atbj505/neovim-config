@@ -236,13 +236,13 @@ export default {
     getSuccess(state, { data }) {
       message.success(data.success, ERROR_MSG_DURATION)
       return {
-	...state
+        ...state
       }
     },
     getFail(state, { data }) {
       message.error(data.error, ERROR_MSG_DURATION)
       return {
-	...state
+        ...state
       }
     }
   }
