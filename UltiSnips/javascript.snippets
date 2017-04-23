@@ -202,4 +202,26 @@ class ${1:component} extends React.Component {
 }
 endsnippet
 
+snippet dvamodel "dva model"
+/* global localStorage document window */
+import { message } from 'antd'
+
+import { axios } from '../../utils'
+
+const ERROR_MSG_DURATION = 3 // 3 秒
+
+export default {
+  namespace: '${1:namespace}',
+  subscriptions: {
+    // { dispatch, history }
+    setup() {
+      console.log('setup')
+    }
+  },
+  state: {},
+  effects: {},
+  reducers: {}
+}
+endsnippet
+
 clearsnippets data dataa obj offset off offsetp extend val param is
