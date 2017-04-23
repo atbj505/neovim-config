@@ -231,21 +231,23 @@ endsnippet
 snippet dvaservice "dva service"
 import { request } from '../utils'
 
-export function get(data) {
+export function get(params) {
   return request('${1:/api}', {
     method: 'get',
     headers: {
       'Content-Type': 'application/json'
-    }
+    },
+    params
   })
 }
 
-export function del(data) {
+export function del(params) {
   return request('/api/login', {
     method: 'delete',
     headers: {
       'Content-Type': 'application/json'
-    }
+    },
+    params
   })
 }
 export function post(data) {
