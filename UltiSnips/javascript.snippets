@@ -223,8 +223,30 @@ export default {
     }
   },
   state: {},
-  effects: {},
-  reducers: {}
+  effects: {
+    *get({ payload }, { call, put }) {
+      const { data } = yield call(get, payload)
+      if (data.success) {
+        yield put({ type: 'getSuccess', payload: data })
+      } else {
+        yield put({ type: 'getFail', payload: data })
+      }
+    }
+  },
+  reducers: {
+    getSuccess(state, { payload }) {
+      return {
+	...state,
+	...payload
+      }
+    },
+    getFail(state, { payload }) {
+      return {
+	...state,
+	...payload
+      }
+    }
+  }
 }
 endsnippet
 
