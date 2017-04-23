@@ -227,20 +227,20 @@ export default {
     *get({ payload }, { call, put }) {
       const { data } = yield call(get, payload)
       if (data.success) {
-        yield put({ type: 'getSuccess', payload: data })
+        yield put({ type: 'getSuccess', data })
       } else {
-        yield put({ type: 'getFail', payload: data })
+        yield put({ type: 'getFail', data })
       }
     }
   },
   reducers: {
-    getSuccess(state, { payload }) {
+    getSuccess(state, { data }) {
       message.success(payload.success, ERROR_MSG_DURATION)
       return {
 	...state
       }
     },
-    getFail(state, { payload }) {
+    getFail(state, { data }) {
       message.error(payload.error, ERROR_MSG_DURATION)
       return {
 	...state
