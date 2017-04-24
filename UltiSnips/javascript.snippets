@@ -218,12 +218,16 @@ export default {
   namespace: '${1:namespace}',
   subscriptions: {
     // { dispatch, history }
-    setup({ dispatch }) {
-      const token = localStorage.getItem('jwttoken')
-      if (token) {
-        axios.defaults.headers.common.Authorization = 'Bearer ' + token
-      }
-      dispatch({ type: 'get' })
+    setup({ dispatch, history }) {
+      history.listen(location => {
+        if (location.pathname === '${3:/api/}') {
+          const token = localStorage.getItem('jwttoken')
+          if (token) {
+            axios.defaults.headers.common.Authorization = 'Bearer ' + token
+          }
+          dispatch({ type: 'get' })
+        }
+      })
     }
   },
   state: {},
