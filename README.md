@@ -16,7 +16,7 @@
 * **vim-snippets**(常用代码块集合)
 * **vim-ctrlspace**(buffer,tab列表)
 * **vim-mark**(高亮，看源码神器)
-* vim-easymotion(快速跳转)
+* **vim-easymotion**(快速跳转)
 
 ##### 语法
 * **Dockerfile.vim**(Dockerfile语法支持)
