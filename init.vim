@@ -18,6 +18,7 @@ Plug 'honza/vim-snippets'                                       " 常用代码�
 Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列表
 Plug 'jrosiek/vim-mark'                                         " 高亮，看源码神器
 Plug 'Lokaltog/vim-easymotion'                                  " 快速跳转
+Plug 'majutsushi/tagbar'                                        " TagBar
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
