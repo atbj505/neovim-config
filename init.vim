@@ -23,6 +23,7 @@ Plug 'Lokaltog/vim-easymotion'                                  " 快速跳转
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
 Plug 'leshill/vim-json'                                         " JSON
 Plug 'digitaltoad/vim-pug'                                      " Pug
+Plug 'nikvdp/ejs-syntax'                                        " ejs
 
 " Plug 'mxw/vim-jsx'
 " Plug 'digitaltoad/vim-jade'
