@@ -22,6 +22,9 @@ Plug 'majutsushi/tagbar'                                        " TagBar
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " js source
 
+let g:tern_request_timeout = 1
+let g:tern_show_signature_in_pum = '0'  " Th
+
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
 Plug 'leshill/vim-json'                                         " JSON
