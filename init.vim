@@ -61,6 +61,8 @@ nmap j gj
 nmap k gk
 " NERDTreeToggle
 nmap <leader>t :NERDTreeToggle<cr>
+" TagBar
+nmap <leader><leader>t :TagBar<cr>
 " 快速注释
 nmap <leader>v <leader>c<space>
 vmap <leader>v <leader>c<space>
@@ -93,7 +95,6 @@ nmap <A-left> <Esc>:vertical resize -1<CR>
 nmap <A-right> <Esc>:vertical resize +1<CR>
 nmap <A-up> <Esc>:resize +1<CR>
 nmap <A-down> <Esc>:resize -1<CR>
-nmap <F8> :TagbarToggle<CR>
 
 " UI设置
 syntax on                                               " 打开语法高亮
