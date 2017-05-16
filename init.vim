@@ -20,6 +20,7 @@ Plug 'Lokaltog/vim-easymotion'                                  " 快速跳转
 Plug 'majutsushi/tagbar'                                        " TagBar
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
@@ -163,4 +164,4 @@ source ~/.config/nvim/config/autoformat.vim             " autoformat设置
 source ~/.config/nvim/config/ultisnips.vim              " ultisnips设置
 source ~/.config/nvim/config/ctrlspace.vim              " ctrlspace设置
 source ~/.config/nvim/config/nerdcommenter.vim          " nerdcommenter设置
-source ~/.config/nvim/config/tagbar.vim          " Tagbar设置
+source ~/.config/nvim/config/tagbar.vim                 " Tagbar设置
