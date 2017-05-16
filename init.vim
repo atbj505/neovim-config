@@ -63,6 +63,7 @@ nmap k gk
 nmap <leader>t :NERDTreeToggle<cr>
 " TagBar
 nmap <leader>b :Tagbar<cr>
+let g:tagbar_autofocus = 1
 " 快速注释
 nmap <leader>v <leader>c<space>
 vmap <leader>v <leader>c<space>
