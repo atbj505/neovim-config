@@ -62,7 +62,7 @@ nmap k gk
 " NERDTreeToggle
 nmap <leader>t :NERDTreeToggle<cr>
 " TagBar
-nmap <leader>tb :TagbarToggle<cr>
+nmap <leader>tb :Tagbar<cr>
 " 快速注释
 nmap <leader>v <leader>c<space>
 vmap <leader>v <leader>c<space>
