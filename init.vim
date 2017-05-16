@@ -10,7 +10,6 @@ Plug 'ap/vim-css-color'                                         " CSS颜色显�
 Plug 'vim-airline/vim-airline'                                  " 状态栏 
 Plug 'vim-airline/vim-airline-themes'                           " 状态栏主题
 Plug 'scrooloose/nerdtree'                                      " 查看项目文件
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'neomake/neomake'                                          " 代码检错
 Plug 'Chiel92/vim-autoformat'                                   " 代码格式化
 Plug 'SirVer/ultisnips'                                         " 代码块
@@ -19,6 +18,9 @@ Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列�
 Plug 'jrosiek/vim-mark'                                         " 高亮，看源码神器
 Plug 'Lokaltog/vim-easymotion'                                  " 快速跳转
 Plug 'majutsushi/tagbar'                                        " TagBar
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " js source
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
