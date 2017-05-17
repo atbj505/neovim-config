@@ -18,7 +18,6 @@ Plug 'vim-ctrlspace/vim-ctrlspace'                              " buffer,tab列�
 Plug 'jrosiek/vim-mark'                                         " 高亮，看源码神器
 Plug 'Lokaltog/vim-easymotion'                                  " 快速跳转
 Plug 'majutsushi/tagbar'                                        " TagBar
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
