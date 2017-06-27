@@ -13,12 +13,7 @@ services:
     links:
       - db
     environment:
-      - DRONE_OPEN=true
-      - DRONE_GOGS=true
-      - DRONE_GOGS_URL=http://gogs:3000
-      - DRONE_SECRET=drone
-      # 必须指定host，供gogs webhook使用
-      - DRONE_HOST=http://172.17.0.3
+      - FOO=bar
     volumes:
       - /data/drone:/var/lib/drone/
     network_mode: bridge
