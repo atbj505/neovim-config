@@ -8,13 +8,10 @@ EXPOSE 8000
 
 WORKDIR /app
 
-# Copy source
 ADD . ./
 
-# Expose media folder
 VOLUME /app/public/media
 
-# Build
 RUN npm i --prod && npm build
 
 CMD npm start
