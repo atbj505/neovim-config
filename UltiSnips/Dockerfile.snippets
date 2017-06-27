@@ -1,3 +1,28 @@
-snippet dockerfile-draft "dockerfile"
-  
+snippet node-dockerfile-draft "dockerfile"
+FROM node:7.10.0-alpine
+MAINTAINER Halsn <xuhalsn@gmail.com>
+
+ENV relax_db__uri="mongodb://mongo/relax"
+EXPOSE 8080
+
+WORKDIR /app
+
+# Copy source
+ADD . ./
+
+# Expose media folder
+VOLUME /app/public/media
+
+# Build
+RUN yarn && yarn build
+
+CMD yarn start
+
+RUN mkdir -p /src
+WORKDIR /src
+COPY . /src
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN npm i --prod
+EXPOSE 5000
+ENTRYPOINT node app.js
 endsnippet
