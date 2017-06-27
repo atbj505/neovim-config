@@ -17,13 +17,5 @@ VOLUME /app/public/media
 # Build
 RUN npm i --prod && npm build
 
-CMD yarn start
-
-RUN mkdir -p /src
-WORKDIR /src
-COPY . /src
-RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-RUN npm i --prod
-EXPOSE 5000
-ENTRYPOINT node app.js
+CMD npm start
 endsnippet
