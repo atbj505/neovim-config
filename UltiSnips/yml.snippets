@@ -15,7 +15,7 @@ services:
     environment:
       - FOO=bar
     volumes:
-      - /data/drone:/var/lib/drone/
+      - .:/var/lib/drone/
     network_mode: bridge
 
   drone-agent:
