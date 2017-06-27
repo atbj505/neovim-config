@@ -3,27 +3,23 @@ version: "2"
 
 services:
 
-  front:
+  web:
     image: $1
+    container_name: $2
     restart: unless-stopped
     ports:
       - "8000:8000"
     depends_on:
-      - backend
+      - db
     links:
       - db
     environment:
       - FOO=bar
-    volumes:
-      - .:/var/lib/drone/
-    network_mode: bridge
 
-  drone-agent:
-    image: drone/drone
-    command: agent
+  db:
+    image: $3
+    container_name: $4
     restart: unless-stopped
-    depends_on:
-      - drone-server
     links:
       - drone-server
     environment:
