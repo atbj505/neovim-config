@@ -1,0 +1,100 @@
+snippet docker-compose-draft "docker-compose-draft"
+version: "2"
+
+services:
+
+  front:
+    image: $1
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    depends_on:
+      - backend
+    links:
+      - gogs
+    environment:
+      - DRONE_OPEN=true
+      - DRONE_GOGS=true
+      - DRONE_GOGS_URL=http://gogs:3000
+      - DRONE_SECRET=drone
+      # 必须指定host，供gogs webhook使用
+      - DRONE_HOST=http://172.17.0.3
+    volumes:
+      - /data/drone:/var/lib/drone/
+    network_mode: bridge
+
+  drone-agent:
+    image: drone/drone
+    command: agent
+    restart: unless-stopped
+    depends_on:
+      - drone-server
+    links:
+      - drone-server
+    environment:
+      - DRONE_SERVER=ws://drone-server:8000/ws/broker
+      - DRONE_SECRET=drone
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    network_mode: bridge
+
+  gogs:
+    image: gogs/gogs
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "10022:22"
+    # 使用sqlite
+    # depends_on:
+      # - mysql
+    # links:
+      # - mysql
+    volumes:
+      - /data/gogs:/data
+    network_mode: bridge
+
+  # mysql:
+    # image: mysql:8
+    # restart: unless-stopped
+    # environment:
+      # - MYSQL_ROOT_PASSWORD=root
+      # - MYSQL_DATABASE=gogs
+      # - MYSQL_USER=halsn
+      # - MYSQL_PASSWORD=halsn
+    # volumes:
+      # - /data/mysql:/var/lib/mysql
+    # network_mode: bridge
+
+  postgres:
+    image: postgres:alpine
+    restart: unless-stopped
+    depends_on:
+      - drone-agent
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+    volumes:
+      - /data/postgresql:/var/lib/postgresql
+      - /data/postgresql_data:/var/lib/postgresql/data
+    network_mode: bridge
+
+  sonarqube:
+    image: sonarqube:alpine
+    restart: unless-stopped
+    environment:
+      - SONARQUBE_HOME=/opt/sonarqube
+      - SONARQUBE_JDBC_USERNAME=sonar
+      - SONARQUBE_JDBC_PASSWORD=sonar
+      - SONARQUBE_JDBC_URL=jdbc:postgresql://postgres:5432/sonar
+    ports:
+      - "3002:9000"
+    depends_on:
+      - postgres
+    links:
+      - postgres
+    volumes:
+      - /data/sonarqube/data:/opt/sonarqube/data
+      - /data/sonarqube/extensions:/opt/sonarqube/extensions
+      - /data/sonarqube/lib/bundled-plugins:/opt/sonarqube/lib/bundled-plugins
+    network_mode: bridge
+endsnippet  
