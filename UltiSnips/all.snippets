@@ -58,7 +58,7 @@ services:
 
   web:
     image: ${1:node}
-    container_name: $2
+    container_name: ${2:web}
     restart: unless-stopped
     ports:
       - "8000:8000"
