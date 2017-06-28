@@ -70,8 +70,8 @@ services:
       - FOO=bar
 
   db:
-    image: $3
-    container_name: $4
+    image: ${3:mongo}
+    container_name: ${4:db}
     restart: unless-stopped
     volumes:
       - /data/mongodb/proctest/db:/data/db
