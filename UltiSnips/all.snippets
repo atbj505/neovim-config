@@ -57,7 +57,7 @@ version: "2"
 services:
 
   web:
-    image: $1
+    image: ${1:node}
     container_name: $2
     restart: unless-stopped
     ports:
