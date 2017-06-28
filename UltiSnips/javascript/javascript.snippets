@@ -105,7 +105,7 @@ JSON.parse(${1})${0}
 endsnippet
 
 snippet each "[].forEach"
-${1:array}.forEach((${2:el}) => {
+${1:array}.forEach((${2:el, idx}) => {
   ${0}
 })
 endsnippet
@@ -174,24 +174,6 @@ endsnippet
 
 snippet let "let = "
 let ${1} = ${0}
-endsnippet
-
-snippet ant_class "class component extends React.Component"
-class ${1:component} extends React.Component {
-  constructor() {
-    super()
-    didmount(this)
-  }
-  state = {
-  }
-  render() {
-    return (
-      <div>
-	${0}
-      </div>
-    )
-  }
-}
 endsnippet
 
 snippet eslint-global "/* global */"
