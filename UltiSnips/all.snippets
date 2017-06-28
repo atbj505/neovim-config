@@ -58,7 +58,7 @@ services:
 
   web:
     image: ${1:node}
-    container_name: ${2:web}
+    container_name: ${2:web-server}
     restart: unless-stopped
     ports:
       - "8000:8000"
@@ -71,7 +71,7 @@ services:
 
   db:
     image: ${3:mongo}
-    container_name: ${4:db}
+    container_name: ${4:web-db}
     restart: unless-stopped
     volumes:
       - /data/mongodb/proctest/db:/data/db
