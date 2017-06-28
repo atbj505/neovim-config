@@ -1,0 +1,42 @@
+snippet dva-service "dva service"
+import { request } from '../utils'
+
+export function get(params) {
+  return request('${1:/api}', {
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    params
+  })
+}
+
+export function del(params) {
+  return request('$1', {
+    method: 'delete',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    params
+  })
+}
+export function post(data) {
+  return request('$1', {
+    method: 'post',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data
+  })
+}
+
+export function put(data) {
+  return request('$1', {
+    method: 'put',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    data
+  })
+}
+endsnippet  
