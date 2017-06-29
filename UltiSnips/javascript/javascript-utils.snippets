@@ -12,7 +12,7 @@ const charMap = range(0, 25).map(e => String.fromCharCode(e + 65))
 endsnippet
 
 # 提供超时判断的Promise
-snippet timeout_promise "Promise with timeout"
+snippet timeoutPromise "Promise with timeout"
 function timeoutPromise(ms, promise) {
 
   let timeout = new Promise((resolve, reject) => {
