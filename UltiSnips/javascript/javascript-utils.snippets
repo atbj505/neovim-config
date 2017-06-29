@@ -16,7 +16,7 @@ snippet timeoutPromise "Promise with timeout"
 function timeoutPromise(ms, promise) {
   const timeout = new Promise((resolve, reject) => {
     const id = setTimeout(() => {
-      clearTimeout(id);
+      clearTimeout(id)
       reject('Timed out in '+ ms + 'ms.')
     }, ms)
   })
