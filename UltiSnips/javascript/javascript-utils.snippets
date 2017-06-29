@@ -14,7 +14,6 @@ endsnippet
 # 提供超时判断的Promise
 snippet timeoutPromise "Promise with timeout"
 function timeoutPromise(ms, promise) {
-
   let timeout = new Promise((resolve, reject) => {
     let id = setTimeout(() => {
       clearTimeout(id);
