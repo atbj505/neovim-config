@@ -53,7 +53,7 @@ uploads/
 public/media/*
 endsnippet
 
-snippet docker-compose_yml "docker-compose"
+snippet docker-compose_yml "docker-compose.yml"
 version: "2"
 
 services:
@@ -78,3 +78,26 @@ services:
     volumes:
       - /data/mongodb/db:/data/db
 endsnippet  
+
+snippet drone_yml "drone.yml"
+pipeline:
+  build:
+    image: node
+    commands:
+      - echo 'start build'
+      - npm i && npm run build
+      - echo 'finished'
+  test:
+    image: node
+    commands:
+      - echo 'start test'
+      - npm i jest -g
+      - npm test
+      - echo 'finished'
+  sonar:
+    image: halsn/sonar-scanner
+    commands:
+      - echo 'sonar-scanner start'
+      - sonar-scanner
+      - echo 'finished'
+endsnippet
