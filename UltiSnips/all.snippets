@@ -212,6 +212,12 @@ snippet node_package_draft "node package.json draft"
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "bluebird": "^3.5.0"
-  }
+  },
+  "jest": {
+    "collectCoverage": true,
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
 }
 endsnippet
