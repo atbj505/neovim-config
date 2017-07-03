@@ -1,9 +1,6 @@
 " JavaScript
-" let g:formatdef_javascript = '"js-beautify -s 2 -j -a -k -X"'
-" let g:formatters_javascript = ['javascript']
-
-let g:formatdef_javascript = '"eslint -o /dev/null --no-color --fix $SRC &>/dev/null"'
-let g:formatters_javascript = ['eslint']
+let g:formatdef_javascript = '"js-beautify -s 2 -j -a -k -X"'
+let g:formatters_javascript = ['javascript']
 
 " Html
 let g:formatdef_html = '"js-beautify --type html -s 2"'
