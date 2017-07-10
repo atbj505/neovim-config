@@ -28,6 +28,7 @@ Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
 Plug 'leshill/vim-json'                                         " JSON
 Plug 'digitaltoad/vim-pug'                                      " Pug
 Plug 'nikvdp/ejs-syntax'                                        " ejs
+Plug 'nono/vim-handlebars'                                      " hbs
 
 " Plug 'mxw/vim-jsx'
 " Plug 'digitaltoad/vim-jade'
