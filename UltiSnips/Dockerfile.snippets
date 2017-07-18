@@ -10,7 +10,7 @@ RUN apk update && \
 
 ENV FOO="bar"
 
-EXPOSE 8000
+EXPOSE ${2:port}
 
 WORKDIR /app
 
