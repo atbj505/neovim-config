@@ -23,16 +23,15 @@ endsnippet
 snippet logger_draft "winston logger draft"
 const winston = require('winston')
 const tsFormat = () => (new Date()).toLocaleString()
-const logFile = `${__dirname}/.log`
+const logFile = ${0:app.log}
 
 function buildLoggerConfig (config) {
   const loggerConfig = Object.assign({}, config)
   loggerConfig.transports = []
   if (process.env.NODE_ENV === 'production') {
     loggerConfig.transports.push(new winston.transports['File'](config.transports.File))
-  } else {
-    loggerConfig.transports.push(new winston.transports['Console'](config.transports.Console))
   }
+  loggerConfig.transports.push(new winston.transports['Console'](config.transports.Console))
   return loggerConfig
 }
 
