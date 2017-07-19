@@ -16,7 +16,7 @@ module.exports.post = (req, res) => {
 }
 endsnippet
 
-snippet express_draft "express draft"
+snippet express_tpl "express template"
 const express = require('express')
 const morgan = require('morgan')
 const compression = require('compression')
@@ -68,7 +68,7 @@ process.on('unhandledRejection', (reason) => {
 module.exports = app
 endsnippet
 
-snippet logger_draft "winston logger draft"
+snippet logger_tpl "winston logger template"
 const winston = require('winston')
 const tsFormat = () => (new Date()).toLocaleString()
 const logFile = ${0:app.log}
