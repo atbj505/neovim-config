@@ -10,7 +10,7 @@ const { db } = require('${2:config}')
 const { URI } = db
 
 mongoose.connect(URI, () => {
-  console.log(`db connected on ${URI}`)
+  logger.info(`db connected on ${URI}`)
 })
 
 const modelFiles = fs.readdirSync(path.resolve('lib/models'))
