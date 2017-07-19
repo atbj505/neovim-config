@@ -16,7 +16,7 @@ mongoose.connect(URI, () => {
 const schemaFiles = fs.readdirSync(path.resolve('${3:shema}'))
 // 加载model以及注册插件
 modelFiles.forEach(file => {
-  const schema = require(path.resolve(`lib/models/${file}`))
+  const schema = require(path.resolve(${4:file}))
   schema.plugin(uniqueValidater)
 })
 
