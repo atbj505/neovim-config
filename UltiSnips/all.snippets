@@ -349,10 +349,12 @@ snippet node_package_tpl "node package.json template"
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run clean && webpack --config webpack/webpack.dev.js && http-server .",
+    "nodemon": "nodemon src/server/app.js -w src/server -w package.json -V",
+    "roadhog": "roadhog server",
+    "dev": "concurrently -p \"[{name}]\" -n \"nodemon,roadhog\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run nodemon\" \"npm run roadhog\"",
     "test": "jest",
-    "build": "webpack --config webpack/webpack.prod.js",
-    "clean": "rm -rf dist"
+    "lint": "eslint ./src",
+    "build": "roadhog build"
   },
   "keywords": [],
   "author": "halsn",
