@@ -43,4 +43,23 @@ module.exports.getError = (err) => {
 endsnippet
 
 snippet mongoose_schema_tpl "mongoose schema template"
+const mongoose = require('mongoose')
+const Schema = require('mongoose').Schema
+
+const schema = new Schema({
+  name: {
+    type: String,
+    required: true
+  }
+})
+
+schema.index({
+  name: 1
+}, {
+  unique: 'name is unique'
+})
+
+module.exports = schema
+
+mongoose.model('User', schema)
 endsnippet
