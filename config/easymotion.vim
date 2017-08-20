@@ -2,4 +2,4 @@
 " hi EasyMotionShade  ctermbg=none ctermfg=red
 
 hi EasyMotionTarget2First ctermbg=none ctermfg=red
-hi EasyMotionTarget2Second ctermbg=none ctermfg=lightred
+hi EasyMotionTarget2Second ctermbg=none ctermfg=maroon
