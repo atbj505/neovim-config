@@ -20,6 +20,7 @@ Plug 'Lokaltog/vim-easymotion'                                  " 快速跳转
 Plug 'majutsushi/tagbar'                                        " TagBar
 Plug 'tpope/vim-fugitive'
 Plug 'rakr/vim-one'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
 
@@ -102,7 +103,8 @@ nmap <A-down> <Esc>:resize -1<CR>
 " UI设置
 syntax on                                               " 打开语法高亮
 " colorscheme monokai                                     " 设置主题monokai
-colorscheme one
+" colorscheme one
+colorscheme PaperColor
 set background=light
 " let g:monokai_thick_border = 1
 " hi Normal ctermbg=none                                  " 设置主题時不显示背景
