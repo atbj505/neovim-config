@@ -1,2 +1,2 @@
-highlight Pmenu ctermbg=7
-highlight PmenuSel ctermfg=254 ctermbg=0
+highlight Pmenu ctermbg=254
+highlight PmenuSel ctermfg=7 ctermbg=0
