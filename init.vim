@@ -103,11 +103,11 @@ nmap <A-down> <Esc>:resize -1<CR>
 " UI设置
 syntax on                                               " 打开语法高亮
 " colorscheme monokai                                     " 设置主题monokai
+" let g:monokai_thick_border = 1
 " colorscheme PaperColor
 colorscheme one
 let g:one_allow_italics = 1                             " I love italic for comments
 set background=light
-" let g:monokai_thick_border = 1
 " hi Normal ctermbg=none                                  " 设置主题時不显示背景
 hi NonText ctermbg=none
 hi MatchParen cterm=none ctermbg=190 ctermfg=46         " 括号匹配颜色
