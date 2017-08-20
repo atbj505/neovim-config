@@ -15,3 +15,4 @@ cp -r . $HOME/.config/nvim
 cp -r ./fonts/. $HOME/.fonts
 
 fc-cache -fv
+gg
