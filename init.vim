@@ -103,7 +103,7 @@ nmap <A-down> <Esc>:resize -1<CR>
 syntax on                                               " 打开语法高亮
 colorscheme monokai                                     " 设置主题monokai
 let g:monokai_thick_border = 1
-hi Normal ctermbg=none                                  " 设置主题時不显示背景
+" hi Normal ctermbg=none                                  " 设置主题時不显示背景
 hi NonText ctermbg=none
 hi MatchParen cterm=none ctermbg=46 ctermfg=190         " 括号匹配颜色
 hi Folded ctermbg=23 ctermfg=51                         " 设置折叠区颜色
