@@ -1,0 +1,12 @@
+# range函数
+snippet	range "range(m, n)"
+function range(m, n) {
+  return Array(n - m + 1).fill().map((x, i) => m + i)
+}
+$0
+endsnippet
+
+# charMap数字映射大写字母
+snippet charMap "0-25 => A-Z"
+const charMap = range(0, 25).map(e => String.fromCharCode(e + 65))
+endsnippet

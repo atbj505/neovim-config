@@ -28,6 +28,7 @@ Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
 Plug 'leshill/vim-json'                                         " JSON
 Plug 'digitaltoad/vim-pug'                                      " Pug
 Plug 'nikvdp/ejs-syntax'                                        " ejs
+Plug 'mustache/vim-mustache-handlebars'                         " hbs
 
 " Plug 'mxw/vim-jsx'
 " Plug 'digitaltoad/vim-jade'
@@ -107,8 +108,13 @@ colorscheme PaperColor
 set background=light
 " hi Normal ctermbg=none                                  " 设置主题時不显示背景
 hi NonText ctermbg=none
+<<<<<<< HEAD
 hi MatchParen cterm=none ctermbg=190 ctermfg=46         " 括号匹配颜色
 hi Folded ctermbg=253 ctermfg=51                         " 设置折叠区颜色
+=======
+hi MatchParen cterm=none ctermbg=186 ctermfg=196         " 括号匹配颜色
+hi Folded ctermbg=23 ctermfg=51                         " 设置折叠区颜色
+>>>>>>> f31f548200d140669e57e46f1526bdd454b46c4c
 " set textwidth=80                                      " 设置每行最长宽度
 set t_Co=256                                            " 设置主题时背景是否可变,256色支持
 " set cursorline                                        " 显示横线

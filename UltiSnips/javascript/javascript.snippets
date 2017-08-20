@@ -46,8 +46,7 @@ snippet @pro "@protected"
 @protected
 endsnippet
 
-# for loop
-snippet for
+snippet for "for loop"
 for (let ${2:i} = 0; $2 < ${1:arr.length}; $2 += 1) {
   $0
 }
@@ -58,18 +57,6 @@ snippet	retp "return new Promse"
 return new Promise((resolve, reject) => {
   $0
 })
-endsnippet
-
-# range函数
-snippet	range "range(m, n)"
-function range(m, n) {
-  return Array(n - m + 1).fill().map((x, i) => m + i)
-}
-$0
-endsnippet
-# charMap数字映射大写字母
-snippet charMap "0-25 => A-Z"
-const charMap = range(0, 25).map(e => String.fromCharCode(e + 65))
 endsnippet
 
 snippet retj "return reject"
@@ -117,7 +104,7 @@ JSON.parse(${1})${0}
 endsnippet
 
 snippet each "[].forEach"
-${1:array}.forEach((${2:el}) => {
+${1:array}.forEach((${2:el, idx}) => {
   ${0}
 })
 endsnippet
@@ -140,6 +127,10 @@ endsnippet
 
 snippet ex "module.export"
 module.exports${1} = ${0}
+endsnippet
+
+snippet ed "export default"
+export default $0
 endsnippet
 
 snippet imm "import {} from ''"
@@ -188,139 +179,14 @@ snippet let "let = "
 let ${1} = ${0}
 endsnippet
 
-snippet antclass "class component extends React.Component"
-class ${1:component} extends React.Component {
-  constructor() {
-    super()
-    didmount(this)
-  }
-  state = {
-  }
-  render() {
-    return (
-      <div>
-	${0}
-      </div>
-    )
-  }
-}
-endsnippet
-
 snippet eslint_global "/* global */"
 /* global localStorage document window */
 endsnippet
 
-snippet dvamodel "dva model"
-/* global localStorage document window */
-import { message } from 'antd'
-import { get } from '${2:service}'
-import { axios } from '../utils'
-
-const ERROR_MSG_DURATION = 3 // 3 秒
-
-export default {
-  namespace: '${1:namespace}',
-  subscriptions: {
-    // { dispatch, history }
-    setup({ dispatch, history }) {
-      history.listen(location => {
-        if (location.pathname === '${3:/api/}') {
-          const token = localStorage.getItem('jwttoken')
-          if (token) {
-            axios.defaults.headers.common.Authorization = 'Bearer ' + token
-          }
-          dispatch({ type: 'get' })
-        }
-      })
-    }
-  },
-  state: {},
-  effects: {
-    *get({ payload }, { call, put }) {
-      const { data } = yield call(get, payload)
-      if (data.success) {
-        yield put({ type: 'getSuccess', data })
-      } else {
-        yield put({ type: 'getFail', data })
-      }
-    }
-  },
-  reducers: {
-    getSuccess(state, { data }) {
-      message.success(data.success, ERROR_MSG_DURATION)
-      return {
-        ...state
-      }
-    },
-    getFail(state, { data }) {
-      message.error(data.error, ERROR_MSG_DURATION)
-      return {
-        ...state
-      }
-    }
-  }
+snippet fun "function () {}"
+function ${1:name} (${2:args}) {
+  ${0}
 }
 endsnippet
 
-snippet dvaservice "dva service"
-import { request } from '../utils'
-
-export function get(params) {
-  return request('${1:/api}', {
-    method: 'get',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    params
-  })
-}
-
-export function del(params) {
-  return request('$1', {
-    method: 'delete',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    params
-  })
-}
-export function post(data) {
-  return request('$1', {
-    method: 'post',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    data
-  })
-}
-
-export function put(data) {
-  return request('$1', {
-    method: 'put',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    data
-  })
-}
-endsnippet  
-
-snippet restapi "express REST api"
-module.exports.get = (req, res) => {
-  return res.json({ success: 'get' })
-}
-
-module.exports.del = (req, res) => {
-  return res.json({ success: 'del' })
-}
-
-module.exports.put = (req, res) => {
-  return res.json({ success: 'put' })
-}
-
-module.exports.post = (req, res) => {
-  return res.json({ success: 'post' })
-}
-endsnippet
-
-clearsnippets data dataa obj offset off offsetp extend val param is reset clearq change get select error resize contains clone
+clearsnippets data dataa obj offset off offsetp extend val param is reset clearq change get select error resize contains clone http next nexta nextu timeout supc sup submit const trigh f
