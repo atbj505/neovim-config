@@ -70,6 +70,8 @@ nmap <leader>b :Tagbar<cr>
 " 快速注释
 nmap <leader>v <leader>c<space>
 vmap <leader>v <leader>c<space>
+" reload
+nmap <leader>c :checktime<cr>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
