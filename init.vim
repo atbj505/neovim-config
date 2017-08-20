@@ -103,8 +103,8 @@ nmap <A-down> <Esc>:resize -1<CR>
 " UI设置
 syntax on                                               " 打开语法高亮
 " colorscheme monokai                                     " 设置主题monokai
-" colorscheme one
-colorscheme PaperColor
+colorscheme one
+" colorscheme PaperColor
 set background=light
 " let g:monokai_thick_border = 1
 " hi Normal ctermbg=none                                  " 设置主题時不显示背景
