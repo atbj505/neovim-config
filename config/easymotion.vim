@@ -1,4 +1,4 @@
-hi EasyMotionTarget ctermbg=253 ctermfg=0
+hi EasyMotionTarget ctermbg=252 ctermfg=0
 " hi EasyMotionShade  ctermbg=none
 
 hi EasyMotionTarget2First ctermbg=none ctermfg=196
