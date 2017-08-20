@@ -1,5 +1,5 @@
-" hi EasyMotionTarget ctermbg=none ctermfg=red
-" hi EasyMotionShade  ctermbg=none ctermfg=red
+hi EasyMotionTarget ctermbg=254
+" hi EasyMotionShade  ctermbg=none
 
 hi EasyMotionTarget2First ctermbg=none ctermfg=196
 hi EasyMotionTarget2Second ctermbg=none ctermfg=196
