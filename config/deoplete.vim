@@ -11,3 +11,8 @@ set completeopt-=preview
 " color
 highlight! Pmenu ctermbg=254
 highlight! PmenuSel ctermfg=7 ctermbg=0
+
+let g:deoplete#omni#functions = {}
+let g:deoplete#omni#functions.javascript = [
+  \ 'tern#Complete',
+\]
