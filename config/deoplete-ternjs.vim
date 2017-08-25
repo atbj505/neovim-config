@@ -18,24 +18,24 @@ let g:deoplete#sources#ternjs#docs = 1
 " When on, only completions that match the current word at the given point will
 " be returned. Turn this off to get all results, so that you can filter on the 
 " client side. Default: 1
-let g:deoplete#sources#ternjs#filter = 0
+let g:deoplete#sources#ternjs#filter = 1
 
 " Whether to use a case-insensitive compare between the current word and 
 " potential completions. Default 0
-let g:deoplete#sources#ternjs#case_insensitive = 1
+let g:deoplete#sources#ternjs#case_insensitive = 0
 
 " When completing a property and no completions are found, Tern will use some 
 " heuristics to try and return some properties anyway. Set this to 0 to 
 " turn that off. Default: 1
-let g:deoplete#sources#ternjs#guess = 0
+let g:deoplete#sources#ternjs#guess = 1
 
 " Determines whether the result set will be sorted. Default: 1
-let g:deoplete#sources#ternjs#sort = 0
+let g:deoplete#sources#ternjs#sort = 1
 
 " When disabled, only the text before the given position is considered part of 
 " the word. When enabled (the default), the whole variable name that the cursor
 " is on will be included. Default: 1
-let g:deoplete#sources#ternjs#expand_word_forward = 0
+let g:deoplete#sources#ternjs#expand_word_forward = 1
 
 " Whether to ignore the properties of Object.prototype unless they have been 
 " spelled out by at least to characters. Default: 1
