@@ -166,7 +166,7 @@ source ~/.config/nvim/config/airline.vim                " airline设置
 source ~/.config/nvim/config/nerdtree.vim               " nerdtree设置
 source ~/.config/nvim/config/delimitMate.vim            " delimitMate设置
 source ~/.config/nvim/config/deoplete.vim               " deoplete设置
-source ~/.config/nvim/config/deoplete-ternjs.vim        " tern设置
+" source ~/.config/nvim/config/deoplete-ternjs.vim        " tern设置
 source ~/.config/nvim/config/neomake.vim                " neomake设置
 source ~/.config/nvim/config/autoformat.vim             " autoformat设置
 source ~/.config/nvim/config/ultisnips.vim              " ultisnips设置
