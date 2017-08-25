@@ -1,5 +1,6 @@
 " let g:deoplete#sources#ternjs#tern_bin = '/home/halsn/.nvm/versions/node/v7.10.0/bin/tern'
 let ternbin = system('which tern')
+echo ternbin
 let g:deoplete#sources#ternjs#tern_bin = ternbin
 
 " Set bin if you have many instalations
