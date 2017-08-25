@@ -8,3 +8,6 @@ imap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 imap <expr><BS> deoplete#smart_close_popup()."\<C-h>"
 " 隐藏preview窗口
 set completeopt-=preview
+" color
+highlight! Pmenu ctermbg=254
+highlight! PmenuSel ctermfg=7 ctermbg=0
