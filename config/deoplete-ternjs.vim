@@ -11,7 +11,7 @@ let ternbin = ChompedSystem('which tern')
 let g:deoplete#sources#ternjs#tern_bin = ternbin
 
 " Set bin if you have many instalations
-" let g:deoplete#sources#ternjs#timeout = 1
+let g:deoplete#sources#ternjs#timeout = 1
 
 " Whether to include the types of the completions in the result data. Default: 0
 let g:deoplete#sources#ternjs#types = 0
