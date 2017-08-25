@@ -49,7 +49,7 @@ let g:deoplete#sources#ternjs#expand_word_forward = 1
 
 " Whether to ignore the properties of Object.prototype unless they have been 
 " spelled out by at least to characters. Default: 1
-let g:deoplete#sources#ternjs#omit_object_prototype = 0
+let g:deoplete#sources#ternjs#omit_object_prototype = 1
 
 " Whether to include JavaScript keywords when completing something that is not 
 " a property. Default: 0
