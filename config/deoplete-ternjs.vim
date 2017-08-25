@@ -1,7 +1,15 @@
 " let g:deoplete#sources#ternjs#tern_bin = '/home/halsn/.nvm/versions/node/v7.10.0/bin/tern'
-let ternbin = system('which tern')
-echo ternbin
-let g:deoplete#sources#ternjs#tern_bin = 'ternbin'
+" 使用system得到的结果会有一行空白，使用以下函数去除
+function! Chomp(string)
+  return substitute(a:string, '\n\+$', '', '')
+endfunction
+function! ChompedSystem( ... )
+  return substitute(call('system', a:000), '\n\+$', '', '')
+endfunction
+
+let ternbin = ChompedSystem('which tern')
+ternbin = ternbin
+let g:deoplete#sources#ternjs#tern_bin = ternbin
 
 " Set bin if you have many instalations
 let g:deoplete#sources#ternjs#timeout = 1
