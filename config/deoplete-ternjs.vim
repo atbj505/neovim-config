@@ -8,7 +8,7 @@ function! ChompedSystem( ... )
 endfunction
 
 let ternbin = ChompedSystem('which tern')
-let g:deoplete#sources#ternjs#tern_bin = ternbin
+" let g:deoplete#sources#ternjs#tern_bin = ternbin
 
 " Set bin if you have many instalations
 let g:deoplete#sources#ternjs#timeout = 1
