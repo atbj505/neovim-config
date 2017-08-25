@@ -22,7 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
-Plug 'ternjs/tern_for_vim'
+Plug 'ternjs/tern_for_vim', { 'build': 'npm install'}
 
 " 语法支持
 Plug 'ekalinin/Dockerfile.vim'                                  " Dockerfile
