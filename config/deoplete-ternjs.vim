@@ -14,7 +14,7 @@ let g:deoplete#sources#ternjs#tern_bin = ternbin
 let g:deoplete#sources#ternjs#timeout = 1
 
 " Whether to include the types of the completions in the result data. Default: 0
-let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#types = 0
 
 " Whether to include the distance (in scopes for variables, in prototypes for 
 " properties) between the completions and the origin position in the result 
