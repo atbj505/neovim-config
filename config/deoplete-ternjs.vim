@@ -37,7 +37,7 @@ let g:deoplete#sources#ternjs#case_insensitive = 0
 " When completing a property and no completions are found, Tern will use some 
 " heuristics to try and return some properties anyway. Set this to 0 to 
 " turn that off. Default: 1
-let g:deoplete#sources#ternjs#guess = 1
+let g:deoplete#sources#ternjs#guess = 0
 
 " Determines whether the result set will be sorted. Default: 1
 let g:deoplete#sources#ternjs#sort = 1
