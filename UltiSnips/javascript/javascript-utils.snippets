@@ -10,3 +10,8 @@ endsnippet
 snippet charMap "0-25 => A-Z"
 const charMap = range(0, 25).map(e => String.fromCharCode(e + 65))
 endsnippet
+
+# 深度取值函数
+snippet deepGetter "deep get value of obj"
+const deepGetter = (p, o) => p.reduce((xs, x) => (xs && xs[x]) ? xs[x] : null, o)
+endsnippet
