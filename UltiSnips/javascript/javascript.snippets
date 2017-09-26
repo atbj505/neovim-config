@@ -60,7 +60,7 @@ return new Promise((resolve, reject) => {
 endsnippet
 
 snippet retj "return reject"
-return reject({ $0 })
+return reject(new Error())
 endsnippet
 
 snippet rets "return resolve"
