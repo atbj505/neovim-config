@@ -81,7 +81,7 @@ vmap d<Space> zd
 " 内置Terminal快捷键
 " autocmd BufWinEnter,WinEnter term://* startinsert
 " autocmd BufLeave term://* stopinsert
-au TermOpen * au WinEnter <buffer> startinsert
+au TermOpen * au WinEnter * startinsert
 tnoremap <Esc> <C-\><C-n>
 nmap <leader>g <Esc>:tabedit term://$SHELL<CR>
 nmap <leader>f <Esc>:sp term://$SHELL<CR>
