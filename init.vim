@@ -81,6 +81,7 @@ vmap d<Space> zd
 " 内置Terminal快捷键
 " autocmd BufWinEnter,WinEnter term://* startinsert
 " autocmd BufLeave term://* stopinsert
+" 自动insert 取消line number
 autocmd TermOpen,WinEnter term://* startinsert
 autocmd TermOpen,WinEnter term://* set nonu
 tnoremap <Esc> <C-\><C-n>
