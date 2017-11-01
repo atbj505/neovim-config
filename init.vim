@@ -71,7 +71,7 @@ nmap <leader>b :Tagbar<cr>
 nmap <leader>v <leader>c<space>
 vmap <leader>v <leader>c<space>
 " reload
-nmap <leader>c :checktime<cr>
+nmap <leader>c :e<cr>
 " 用空格键来开关折叠
 nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
