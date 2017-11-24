@@ -15,3 +15,8 @@ endsnippet
 snippet deepGetter "deepGetter(['user', 'posts', 0, 'comments'], obj)"
 const deepGetter = (p, o) => p.reduce((xs, x) => (xs && xs[x]) ? xs[x] : null, o)
 endsnippet
+
+# Ojb克隆函数
+snippet cloneobj "clone an object from source"
+JSON.parse(JSON.stringify($0))
+endsnippet
