@@ -72,19 +72,19 @@ return res.json({ $0 })
 endsnippet
 
 snippet log "logger.log"
-logger.log(\`line `!v line(".")` $0\`)
+logger.log(\`line `!v line(".")`: $0\`)
 endsnippet
 
 snippet logi "logger.info"
-logger.info(\`line `!v line(".")` $0\`)
+logger.info(\`line `!v line(".")`: $0\`)
 endsnippet
 
 snippet loge "logger.error"
-logger.error(\`line `!v line(".")` $0\`)
+logger.error(\`line `!v line(".")`: $0\`)
 endsnippet
 
 snippet logd "logger.debug"
-logger.debug(\`line `!v line(".")` $0\`)
+logger.debug(\`line `!v line(".")`: $0\`)
 endsnippet
 
 snippet req "require('model')"
@@ -126,7 +126,7 @@ ${1:array}.reduce((${2:pre}, ${3:cur}) => ${0})
 endsnippet
 
 snippet cl "console.log"
-console.log(\`line `!v line(".")` $0\`)
+console.log(\`line `!v line(".")`: $0\`)
 endsnippet
 
 snippet ex "module.export"
