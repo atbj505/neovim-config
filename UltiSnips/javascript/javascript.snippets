@@ -72,11 +72,11 @@ return res.json({ $0 })
 endsnippet
 
 snippet log "logger.log"
-logger.log(\`line `!v line(".")`: $0\`)
+logger.log(\``!v expand('%:t')`:`!v line(".")` - $0\`)
 endsnippet
 
 snippet logi "logger.info"
-logger.info(\`line `!v line(".")`: $0\`)
+logger.info(\``!v expand('%:t')`:`!v line(".")` - $0\`)
 endsnippet
 
 snippet loge "logger.error"
