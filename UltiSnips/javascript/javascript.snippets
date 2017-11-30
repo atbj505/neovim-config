@@ -80,11 +80,11 @@ logger.info(\`line `!v line(".")`: $0\`)
 endsnippet
 
 snippet loge "logger.error"
-logger.error(\`line `!v line(".")`: $0\`)
+logger.error(\``!v expand('%:t')`:`!v line(".")` - $0\`)
 endsnippet
 
 snippet logd "logger.debug"
-logger.debug(\`line `!v line(".")`: $0\`)
+logger.debug(\``!v expand('%:t')`:`!v line(".")` - $0\`)
 endsnippet
 
 snippet req "require('model')"
