@@ -72,19 +72,19 @@ return res.json({ $0 })
 endsnippet
 
 snippet log "logger.log"
-logger.log($0, `!v line(".")`)
+logger.log(\`line `!v line(".")` $0\`)
 endsnippet
 
 snippet logi "logger.info"
-logger.info($0, `!v line(".")`)
+logger.info(\`line `!v line(".")` $0\`)
 endsnippet
 
 snippet loge "logger.error"
-logger.error($0, `!v line(".")`)
+logger.error(\`line `!v line(".")` $0\`)
 endsnippet
 
 snippet logd "logger.debug"
-logger.debug($0, `!v line(".")`)
+logger.debug(\`line `!v line(".")` $0\`)
 endsnippet
 
 snippet req "require('model')"
