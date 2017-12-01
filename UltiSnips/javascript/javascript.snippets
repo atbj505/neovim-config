@@ -72,19 +72,23 @@ return res.json({ $0 })
 endsnippet
 
 snippet log "logger.log"
-logger.log(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+# logger.log(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+logger.log(\``!v line(".")` - $0\`)
 endsnippet
 
 snippet logi "logger.info"
-logger.info(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+# logger.info(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+logger.info(\``!v line(".")` - $0\`)
 endsnippet
 
 snippet loge "logger.error"
-logger.error(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+# logger.error(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+logger.error(\``!v line(".")` - $0\`)
 endsnippet
 
 snippet logd "logger.debug"
-logger.debug(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+# logger.debug(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+logger.debug(\``!v line(".")` - $0\`)
 endsnippet
 
 snippet req "require('model')"
@@ -126,7 +130,8 @@ ${1:array}.reduce((${2:pre}, ${3:cur}) => ${0})
 endsnippet
 
 snippet cl "console.log"
-console.log(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+# console.log(\``!v expand('%:t')`:`!v line(".")` - $0\`)
+console.log(\``!v line(".")` - $0\`)
 endsnippet
 
 snippet ex "module.export"
