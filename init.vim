@@ -79,6 +79,9 @@ nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
 nmap d<Space> zd
 vmap d<Space> zd
+" toggle lopen and copen
+nmap <script> <silent> <leader>m :call ToggleLocationList()<CR>
+nmap <script> <silent> <leader>c :call ToggleQuickfixList()<CR>
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
