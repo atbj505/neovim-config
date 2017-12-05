@@ -80,7 +80,7 @@ vmap <Space> zf
 nmap d<Space> zd
 vmap d<Space> zd
 " toggle lopen and copen
-let g:toggle_list_no_mappings=1
+" let g:toggle_list_no_mappings=1
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
