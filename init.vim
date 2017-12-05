@@ -82,8 +82,8 @@ vmap d<Space> zd
 nmap <Leader>m <Plug>BookmarkToggle
 nmap <Leader>i <Plug>BookmarkAnnotate
 nmap <Leader>a <Plug>BookmarkShowAll
-nmap <Leader>j <Plug>BookmarkNext
-nmap <Leader>k <Plug>BookmarkPrev
+nmap <Leader>n <Plug>BookmarkNext
+nmap <Leader>p <Plug>BookmarkPrev
 nmap <Leader>x <Plug>BookmarkClearAll
 
 " 内置Terminal快捷键

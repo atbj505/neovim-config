@@ -1,3 +1,3 @@
 let l:bm_file_version = 1
-let l:bm_sessions = {'default': {'/home/halsn/.config/nvim/init.vim': [{'sign_idx': 9511, 'line_nr': 99, 'content': 'nmap <leader>f <Esc>:sp term://$SHELL<CR>'},{'sign_idx': 9512, 'line_nr': 110, 'content': 'nmap <A-j> <C-w>j'},],}}
+let l:bm_sessions = {'default': {'/home/halsn/.config/nvim/init.vim': [{'sign_idx': 9512, 'line_nr': 108, 'content': 'nmap <A-j> <C-w>j'},{'sign_idx': 9511, 'line_nr': 97, 'content': 'nmap <leader>f <Esc>:sp term://$SHELL<CR>'},],}}
 let l:bm_current_session = 'default'
