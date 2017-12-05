@@ -80,8 +80,7 @@ vmap <Space> zf
 nmap d<Space> zd
 vmap d<Space> zd
 " toggle lopen and copen
-nmap <script> <silent> <leader>m :call ToggleLocationList()<CR>
-nmap <script> <silent> <leader>c :call ToggleQuickfixList()<CR>
+let g:toggle_list_no_mappings
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
