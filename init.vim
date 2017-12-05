@@ -22,7 +22,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'kshenoy/vim-signature'                                    " mark
-Plug 'milkypostman/vim-togglelist'                              " toggle lopen and copen
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
 
 " 语法支持
@@ -79,12 +78,6 @@ nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
 nmap d<Space> zd
 vmap d<Space> zd
-" toggle lopen and copen
-let g:toggle_list_no_mappings=1
-nmap <leader>m <Esc>:call ToggleLocationList()<CR>
-vmap <leader>m <Esc>:call ToggleLocationList()<CR>
-nmap <leader>c <Esc>:call ToggleQuickfixList()<CR>
-vmap <leader>c <Esc>:call ToggleQuickfixList()<CR>
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
