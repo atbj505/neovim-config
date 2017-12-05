@@ -81,6 +81,10 @@ nmap d<Space> zd
 vmap d<Space> zd
 " toggle lopen and copen
 let g:toggle_list_no_mappings=1
+nmap <leader>m <Esc>:call ToggleLocationList()<CR>
+vmap <leader>m <Esc>:call ToggleLocationList()<CR>
+nmap <leader>c <Esc>:call ToggleQuickfixList()<CR>
+vmap <leader>c <Esc>:call ToggleQuickfixList()<CR>
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
