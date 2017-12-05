@@ -22,7 +22,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'MattesGroeger/vim-bookmarks'                              " bookmarks
-" Plug 'kshenoy/vim-signature'                                    " mark
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
 
 " 语法支持
@@ -167,7 +166,7 @@ source ~/.config/nvim/config/saveview.vim               " 保存代码折叠,光
 source ~/.config/nvim/config/customfold.vim             " 自定义折叠格式
 source ~/.config/nvim/config/indentLine.vim             " 缩进线
 source ~/.config/nvim/config/emmet.vim                  " emmet设置
-source ~/.config/nvim/config/airline.vim                " airline设置
+" source ~/.config/nvim/config/airline.vim                " airline设置
 source ~/.config/nvim/config/nerdtree.vim               " nerdtree设置
 source ~/.config/nvim/config/delimitMate.vim            " delimitMate设置
 source ~/.config/nvim/config/deoplete.vim               " deoplete设置
