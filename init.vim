@@ -78,6 +78,16 @@ nmap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 vmap <Space> zf
 nmap d<Space> zd
 vmap d<Space> zd
+" bookmarks快捷键
+nmap <Leader><Leader> <Plug>BookmarkToggle
+nmap <Leader>i <Plug>BookmarkAnnotate
+nmap <Leader>a <Plug>BookmarkShowAll
+nmap <Leader>j <Plug>BookmarkNext
+nmap <Leader>k <Plug>BookmarkPrev
+nmap <Leader>c <Plug>BookmarkClear
+nmap <Leader>x <Plug>BookmarkClearAll
+nmap <Leader>kk <Plug>BookmarkMoveUp
+nmap <Leader>jj <Plug>BookmarkMoveDown
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
