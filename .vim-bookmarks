@@ -1,3 +1,3 @@
 let l:bm_file_version = 1
-let l:bm_sessions = {'default': {'/home/halsn/.config/nvim/init.vim': [{'sign_idx': 9501, 'line_nr': 97, 'content': 'autocmd BufLeave,WinLeave term://* set nu'},{'sign_idx': 9500, 'line_nr': 80, 'content': 'vmap d<Space> zd'},{'sign_idx': 9502, 'line_nr': 101, 'content': 'nmap <leader>d <Esc>:vsp term://$SHELL<CR>', 'annotation': 'fuck'},],}}
+let l:bm_sessions = {'default': {'/home/halsn/.config/nvim/init.vim': [{'sign_idx': 9509, 'line_nr': 95, 'content': 'autocmd BufEnter,TermOpen,WinEnter term://* set nonu'},{'sign_idx': 9510, 'line_nr': 98, 'content': 'tnoremap <Esc> <C-\><C-n>', 'annotation': '随便一行'},{'sign_idx': 9508, 'line_nr': 104, 'content': 'tnoremap <A-h> <C-\><C-n><C-w>h'},{'sign_idx': 9507, 'line_nr': 106, 'content': 'tnoremap <A-k> <C-\><C-n><C-w>k'},],}}
 let l:bm_current_session = 'default'
