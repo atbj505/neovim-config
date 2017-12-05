@@ -1,3 +1,0 @@
-let l:bm_file_version = 1
-let l:bm_sessions = {'default': {'/home/halsn/.config/nvim/init.vim': [{'sign_idx': 9500, 'line_nr': 5, 'content': 'Plug ''Raimondi/delimitMate''                                     " 自动加括号，换行等', 'annotation': '第一个插件'},{'sign_idx': 9501, 'line_nr': 43, 'content': 'imap ii <Esc>'},{'sign_idx': 9502, 'line_nr': 82, 'content': '" 内置Terminal快捷键'},{'sign_idx': 9503, 'line_nr': 179, 'content': 'source ~/.config/nvim/config/tagbar.vim                 " Tagbar设置'},],}}
-let l:bm_current_session = 'default'
