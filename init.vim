@@ -22,7 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'kshenoy/vim-signature'                                    " mark
-" Plug 'milkypostman/vim-togglelist'                              " toggle lopen and copen
+Plug 'milkypostman/vim-togglelist'                              " toggle lopen and copen
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
 
 " 语法支持
