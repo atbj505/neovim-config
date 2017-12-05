@@ -79,7 +79,7 @@ vmap <Space> zf
 nmap d<Space> zd
 vmap d<Space> zd
 " bookmarks快捷键
-nmap <Leader><Leader> <Plug>BookmarkToggle
+nmap <Leader>m <Plug>BookmarkToggle
 nmap <Leader>i <Plug>BookmarkAnnotate
 nmap <Leader>a <Plug>BookmarkShowAll
 nmap <Leader>j <Plug>BookmarkNext
