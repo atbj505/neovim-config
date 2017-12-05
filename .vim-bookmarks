@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/home/halsn/.config/nvim/init.vim': [{'sign_idx': 9501, 'line_nr': 97, 'content': 'autocmd BufLeave,WinLeave term://* set nu'},{'sign_idx': 9500, 'line_nr': 80, 'content': 'vmap d<Space> zd'},{'sign_idx': 9502, 'line_nr': 101, 'content': 'nmap <leader>d <Esc>:vsp term://$SHELL<CR>', 'annotation': 'fuck'},],}}
+let l:bm_current_session = 'default'
