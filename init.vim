@@ -167,6 +167,7 @@ source ~/.config/nvim/config/customfold.vim             " 自定义折叠格式
 source ~/.config/nvim/config/indentLine.vim             " 缩进线
 source ~/.config/nvim/config/emmet.vim                  " emmet设置
 " source ~/.config/nvim/config/airline.vim                " airline设置
+source ./config/airline.vim
 source ~/.config/nvim/config/nerdtree.vim               " nerdtree设置
 source ~/.config/nvim/config/delimitMate.vim            " delimitMate设置
 source ~/.config/nvim/config/deoplete.vim               " deoplete设置
