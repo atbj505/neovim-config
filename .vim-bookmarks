@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/home/halsn/.config/nvim/init.vim': [{'sign_idx': 9500, 'line_nr': 5, 'content': 'Plug ''Raimondi/delimitMate''                                     " 自动加括号，换行等'},{'sign_idx': 9501, 'line_nr': 43, 'content': 'imap ii <Esc>'},],}}
+let l:bm_current_session = 'default'
