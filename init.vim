@@ -22,7 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 " Plug 'MattesGroeger/vim-bookmarks'                              " bookmarks
-Plug 'kshenoy/vim-signature'                                    " bookmarks
+" Plug 'kshenoy/vim-signature'                                    " bookmarks
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
 
 " 语法支持
@@ -189,4 +189,4 @@ source ~/.config/nvim/config/nerdcommenter.vim          " nerdcommenter设置
 source ~/.config/nvim/config/tagbar.vim                 " Tagbar设置
 source ~/.config/nvim/config/easymotion.vim             " easymotion设置
 " source ~/.config/nvim/config/bookmarks.vim              " bookmarks设置
-source ~/.config/nvim/config/signature.vim              " signature设置
+" source ~/.config/nvim/config/signature.vim              " signature设置
