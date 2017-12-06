@@ -21,6 +21,7 @@ Plug 'majutsushi/tagbar'                                        " TagBar
 Plug 'tpope/vim-fugitive'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
+Plug 'powerman/vim-plugin-AnsiEsc'                              " 显示ansi color"
 " Plug 'MattesGroeger/vim-bookmarks'                              " bookmarks
 " Plug 'kshenoy/vim-signature'                                    " bookmarks
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
