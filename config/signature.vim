@@ -1,0 +1,23 @@
+let g:SignatureMap = {
+      \ 'Leader'             :  "",
+      \ 'PlaceNextMark'      :  "",
+      \ 'ToggleMarkAtLine'   :  "",
+      \ 'PurgeMarksAtLine'   :  "",
+      \ 'DeleteMark'         :  "",
+      \ 'PurgeMarks'         :  "",
+      \ 'PurgeMarkers'       :  "",
+      \ 'GotoNextLineAlpha'  :  "",
+      \ 'GotoPrevLineAlpha'  :  "",
+      \ 'GotoNextSpotAlpha'  :  "",
+      \ 'GotoPrevSpotAlpha'  :  "",
+      \ 'GotoNextLineByPos'  :  "",
+      \ 'GotoPrevLineByPos'  :  "",
+      \ 'GotoNextSpotByPos'  :  "",
+      \ 'GotoPrevSpotByPos'  :  "",
+      \ 'GotoNextMarker'     :  "",
+      \ 'GotoPrevMarker'     :  "",
+      \ 'GotoNextMarkerAny'  :  "",
+      \ 'GotoPrevMarkerAny'  :  "",
+      \ 'ListBufferMarks'    :  "",
+      \ 'ListBufferMarkers'  :  ""
+      \ }
