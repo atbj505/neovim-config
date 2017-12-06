@@ -14,10 +14,10 @@ let g:SignatureMap = {
       \ 'GotoPrevLineByPos'  :  "",
       \ 'GotoNextSpotByPos'  :  "",
       \ 'GotoPrevSpotByPos'  :  "",
-      \ 'GotoNextMarker'     :  ",j",
-      \ 'GotoPrevMarker'     :  ",k",
-      \ 'GotoNextMarkerAny'  :  "",
-      \ 'GotoPrevMarkerAny'  :  "",
+      \ 'GotoNextMarker'     :  "",
+      \ 'GotoPrevMarker'     :  "",
+      \ 'GotoNextMarkerAny'  :  ",j",
+      \ 'GotoPrevMarkerAny'  :  ",k",
       \ 'ListBufferMarks'    :  "",
       \ 'ListBufferMarkers'  :  ""
       \ }

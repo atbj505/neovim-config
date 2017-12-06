@@ -87,6 +87,7 @@ vmap d<Space> zd
 " nmap <Leader>k <Plug>BookmarkPrev
 " nmap <Leader>x <Plug>BookmarkClearAll
 " nmap <Leader>c <Plug>BookmarkClear
+" signature快捷键
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
