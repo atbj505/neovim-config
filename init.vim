@@ -85,6 +85,7 @@ nmap <Leader>a <Plug>BookmarkShowAll
 nmap <Leader>j <Plug>BookmarkNext
 nmap <Leader>k <Plug>BookmarkPrev
 nmap <Leader>x <Plug>BookmarkClearAll
+nmap <Leader>c <Plug>BookmarkClear
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
