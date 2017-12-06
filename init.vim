@@ -80,13 +80,13 @@ vmap <Space> zf
 nmap d<Space> zd
 vmap d<Space> zd
 " bookmarks快捷键
-nmap <Leader>m <Plug>BookmarkToggle
-nmap <Leader>i <Plug>BookmarkAnnotate
-nmap <Leader>a <Plug>BookmarkShowAll
-nmap <Leader>j <Plug>BookmarkNext
-nmap <Leader>k <Plug>BookmarkPrev
-nmap <Leader>x <Plug>BookmarkClearAll
-nmap <Leader>c <Plug>BookmarkClear
+" nmap <Leader>m <Plug>BookmarkToggle
+" nmap <Leader>i <Plug>BookmarkAnnotate
+" nmap <Leader>a <Plug>BookmarkShowAll
+" nmap <Leader>j <Plug>BookmarkNext
+" nmap <Leader>k <Plug>BookmarkPrev
+" nmap <Leader>x <Plug>BookmarkClearAll
+" nmap <Leader>c <Plug>BookmarkClear
 
 " 内置Terminal快捷键
 " 自动insert 取消line number
@@ -187,4 +187,4 @@ source ~/.config/nvim/config/ctrlspace.vim              " ctrlspace设置
 source ~/.config/nvim/config/nerdcommenter.vim          " nerdcommenter设置
 source ~/.config/nvim/config/tagbar.vim                 " Tagbar设置
 source ~/.config/nvim/config/easymotion.vim             " easymotion设置
-source ~/.config/nvim/config/bookmarks.vim              " bookmarks设置
+" source ~/.config/nvim/config/bookmarks.vim              " bookmarks设置
