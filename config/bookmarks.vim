@@ -5,7 +5,7 @@ let g:bookmark_auto_close = 1
 
 " Finds the Git super-project directory.
 function! g:BMWorkDirFileLocation()
-    let filename = '.bookmarks'
+    let filename = 'bookmarks'
     let location = ''
     if isdirectory('.git')
         " Current work dir is git's work tree
