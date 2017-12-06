@@ -1,7 +1,7 @@
 let g:SignatureMap = {
-      \ 'Leader'             :  "",
+      \ 'Leader'             :  ",",
       \ 'PlaceNextMark'      :  "",
-      \ 'ToggleMarkAtLine'   :  "",
+      \ 'ToggleMarkAtLine'   :  ",m",
       \ 'PurgeMarksAtLine'   :  "",
       \ 'DeleteMark'         :  "",
       \ 'PurgeMarks'         :  "",
