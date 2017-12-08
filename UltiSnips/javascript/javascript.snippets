@@ -63,6 +63,10 @@ snippet retj "return reject"
 return reject(new Error(JSON.stringify({ $0 })))
 endsnippet
 
+snippet throw "thwor new Error"
+throw new Error(JSON.stringify({ $0 }))
+endsnippet
+
 snippet rets "return resolve"
 return resolve($0)
 endsnippet
