@@ -137,6 +137,7 @@ set number                                              " 显示行号
 set showmatch                                           " 高亮括号配对
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1                     " 插入模式下光标变为竖线
 set hidden
+autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
 
 " 文件类型配置
