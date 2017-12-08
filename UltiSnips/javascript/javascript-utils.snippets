@@ -13,9 +13,9 @@ endsnippet
 
 # 深度取值函数
 snippet deepGetter "deepGetter(obj, ['user', 'posts', 0, 'comments'])"
-function deepGetter(obj, pros) {
+function deepGetter(obj, attrs) {
   const getter = (p, o) => p.reduce((xs, x) => (xs && xs[x]) ? xs[x] : null, o)
-  return getter(pros, obj)
+  return getter(attrs, obj)
 }
 endsnippet
 
