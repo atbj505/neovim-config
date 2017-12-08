@@ -22,6 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全神器
 Plug 'powerman/vim-plugin-AnsiEsc'                              " 显示ansi color"
+Plug 'pboettch/vim-highlight-cursor-words'                      " 高亮光标单词
 " Plug 'MattesGroeger/vim-bookmarks'                              " bookmarks
 " Plug 'kshenoy/vim-signature'                                    " bookmarks
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
@@ -137,7 +138,7 @@ set number                                              " 显示行号
 set showmatch                                           " 高亮括号配对
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1                     " 插入模式下光标变为竖线
 set hidden
- " 高亮光标下单词
+" 高亮光标下单词
 " autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<cword>'), '/\'))
 
 
