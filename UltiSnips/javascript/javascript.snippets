@@ -162,7 +162,7 @@ return Promise.resolve(${1})${0}
 endsnippet
 
 snippet retpj "return Promise.reject"
-return Promise.reject(new Error(${1}))${0}
+return Promise.reject(new Error(JSON.stringify({ $1 })))${0}
 endsnippet
 
 snippet .catch ".catch(err)"
