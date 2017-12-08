@@ -192,5 +192,6 @@ source ~/.config/nvim/config/ctrlspace.vim              " ctrlspace设置
 source ~/.config/nvim/config/nerdcommenter.vim          " nerdcommenter设置
 source ~/.config/nvim/config/tagbar.vim                 " Tagbar设置
 source ~/.config/nvim/config/easymotion.vim             " easymotion设置
+source ~/.config/nvim/config/hicursor.vim               " hicursor设置
 " source ~/.config/nvim/config/bookmarks.vim              " bookmarks设置
 " source ~/.config/nvim/config/signature.vim              " signature设置
