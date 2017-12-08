@@ -12,8 +12,11 @@ const charMap = range(0, 25).map(e => String.fromCharCode(e + 65))
 endsnippet
 
 # 深度取值函数
-snippet deepGetter "deepGetter(['user', 'posts', 0, 'comments'], obj)"
-const deepGetter = (p, o) => p.reduce((xs, x) => (xs && xs[x]) ? xs[x] : null, o)
+snippet deepGetter "deepGetter(obj, ['user', 'posts', 0, 'comments'])"
+function deepGetter(obj, pros) {
+  const getter = (p, o) => p.reduce((xs, x) => (xs && xs[x]) ? xs[x] : null, o)
+  return getter(pros, obj)
+}
 endsnippet
 
 # Ojb克隆函数
