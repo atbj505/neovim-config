@@ -117,6 +117,7 @@ nmap <A-left> <Esc>:vertical resize -1<CR>
 nmap <A-right> <Esc>:vertical resize +1<CR>
 nmap <A-up> <Esc>:resize +1<CR>
 nmap <A-down> <Esc>:resize -1<CR>
+vnoremap // y/<C-R>"<CR>
 
 " UI设置
 syntax on                                               " 打开语法高亮
