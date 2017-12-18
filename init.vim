@@ -24,7 +24,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }   " 自动补全�
 Plug 'powerman/vim-plugin-AnsiEsc'                              " 显示ansi color"
 Plug 'pboettch/vim-highlight-cursor-words'                      " 高亮光标单词
 " Plug 'MattesGroeger/vim-bookmarks'                              " bookmarks
-Plug 'kshenoy/vim-signature'                                    " bookmarks
+" Plug 'kshenoy/vim-signature'                                    " bookmarks
 " Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " it's too slow
 
 " 语法支持
