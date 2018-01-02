@@ -175,7 +175,7 @@ snippet .catch ".catch(err)"
 })
 endsnippet
 
-snippet praserr "JSON.parse(e.message)"
+snippet parserr "JSON.parse(e.message)"
 var err = JSON.parse(e.message)
 if (err.errcode) {
   userMgr.sendMsg(userId, '${1}', err)
